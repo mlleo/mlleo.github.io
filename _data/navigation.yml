@@ -5,7 +5,7 @@ main:
   - title: "CS"
     url: /cs/
   - title: "All Posts"
-    url: /all_posts/
+    url: /categories/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
