@@ -2,10 +2,10 @@
 main:
   - title: "ML"
     url: /ml/
-   - title: "CS"
-     url: /cs/
-   - title: "All Posts"
-     url: /all_posts/
+  - title: "CS"
+    url: /cs/
+  - title: "All Posts"
+    url: /all_posts/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
