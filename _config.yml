@@ -93,15 +93,16 @@ analytics:
 
 # Site Author
 author:
-  name             : "Jeongho Shin (Leo)"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  
+  name             : "Jeongho Shin(Leo)"
+  avatar           : "/assets/images/profile.jpg"
   bio              : "I am an **amazing** person."
   location         : "Seoul, Korea"
-  email            : "0x01.leo@gmail.com"
+  email            : ""
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-       url: "mailto:0x01.leo@gmail.com"
+      url: "0x01.leo@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -113,10 +114,10 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-       url: "https://github.com/mlleo"
+      url: "https://github.com/mlleo"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-       url: "https://instagram.com/_leo_shin_"
+      url: "https://instagram.com/_leo_shin_"
 
 # Site Footer
 footer:
