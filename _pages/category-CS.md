@@ -1,6 +1,6 @@
 ---
 title: "CS"
 permalink: /cs/
-layout: single
+layout: category-CS
 author_profile: true
 ---

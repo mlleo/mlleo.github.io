@@ -1,6 +1,6 @@
 ---
 title: "ML"
 permalink: /ml/
-layout: single
+layout: category-ML
 author_profile: true
 ---
