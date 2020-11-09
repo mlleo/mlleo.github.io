@@ -4,6 +4,8 @@ main:
     url: /ml/
   - title: "CS"
     url: /cs/
+  - title: "Daily"
+    url: /daily/
   - title: "All Posts"
     url: /categories/
   # - title: "Sample Collections"
