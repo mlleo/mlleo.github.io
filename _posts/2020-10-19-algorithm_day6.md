@@ -9,6 +9,7 @@ use_math: true # MathJax On
 
 #### DFS(Depth-First Search)
 - 그래프에서 깊은 부분을 우선적으로 탐색하는 알고리즘
+- 데이터의 개수가 N개인 경우 O(N)
 - 스택 자료구조를 이용
   1. 탐색 시작 노드를 스택에 삽입하고 방문 처리를 한다.
   2. 스택의 최상단 노드에 방문하지 않은 인접 노드가 있으면 그 인접 노드를 스택에 넣고 방문 처리를 한다. 방문하지 않은 인접 노드가 없으면 스택에서 최상단 노드를 꺼낸다.
@@ -37,6 +38,40 @@ EX. DFS 예시 (방문 처리된 노드는 회색으로, 현재 처리하는 스
 ![17](https://user-images.githubusercontent.com/62474292/101473865-b4b70f80-398d-11eb-9234-24475684d467.png)
 ![18](https://user-images.githubusercontent.com/62474292/101473902-be407780-398d-11eb-90b1-f1239bbf5fd5.png)
 ![19](https://user-images.githubusercontent.com/62474292/101473879-b7b20000-398d-11eb-84b3-c794e8876ae9.png)
+
+Result : 1-> 2-> 5-> 8-> 4-> 9-> 3-> 7-> 6
+
+`code`
+```py
+def dfs(graph,v,visited):
+  visited[v] = True   # 현재 노드를 방문 처리
+  print(v, end='')
+  for i in graph[v]:  # 현재 노드와 연결된 다른 노드를 재귀적으로 방문
+    if not visited[i]:
+      dfs(graph,i,visited)
+
+graph = [   # 각 노드가 연결된 정보를 리스트 자료형으로 표현
+  [],
+  [2,3,4],
+  [1,5],
+  [1,7],
+  [1,8],
+  [2,8,9],
+  [7],
+  [3,6],
+  [4,5],
+  [5]
+]
+
+visited = [False] * 9   # 각 노드가 방문된 정보를 리스트 자료형으로 표현
+
+dfs(graph,1,visited)    # 정의된 DFS 함수 호출
+```
+```
+1 2 5 8 4 9 3 7 6
+```
+
+#### 기본 예제 1
 
 
 
