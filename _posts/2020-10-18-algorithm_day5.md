@@ -11,6 +11,7 @@ Search Algorithm (BFS / DFS)
 
 #### Background
 - Stack (LIFO)
+  - 별도로 재귀함수는 내부적으로 스택 자료구조와 동일 (나중에 호출된 함수가 먼저 수행을 끝내야 그 이전에 호출된 함수가 종료되므로)
 
 `code`
 ```py
@@ -29,3 +30,73 @@ print(stack[::-1])  # 가장 위에 있는 원소부터 출력
 [2,1]
 ```
 - Queue (FIFO)
+
+`code`
+```py
+from collections import deque
+
+queue = deque() # queue구현을 위해 deque 라이브러리 사용
+
+queue.append(1)
+queue.append(2)
+queue.append(3)
+queue.append(4)
+queue.popleft()
+queue.append(5)
+queue.append(6)
+queue.popleft()
+
+print(queue)  # 먼저 들어온 순서대로 출력
+queue.reverse() # 역순으로 변경
+print(queue)  # 나중에 들어온 순서대로 출력
+```
+```
+deque([3,4,5,6])
+deque([6,5,4,3])
+```
+  - deque 객체를 리스트 자료형으로 변경하고자 하면 list(queue)!
+
+
+#### DFS(Depth-First Search)
+- 그래프에서 깊은 부분을 우선적으로 탐색하는 알고리즘
+- 그래프 표현 방식 2가지
+  - 인접 행렬 (Adjacency Matrix) : 2차원 배열로 그래프의 연결관계를 표현
+    - 인접 리스트
+ 
+  
+  `code`
+  ```py
+  INF = 9999999 # 무한의 비용 선언
+  graph = [
+    [0,4,9]
+    [4,0,INF]
+    [9,INF,0]
+  ]
+  print(graph)
+  ```
+  ```
+  [[0,4,9],[4,0,9999999],[9,9999999,0]]
+  ```
+  - 인접 리스트 (Adjacency List) : 리스트로 그래프의 연결관계를 표현
+  
+  `code`
+  ```py
+  graph = [[] for _ in range(3)]  # 행(Row)이 3개인 2차원 리스트 생성
+  graph[0].append((1,4))  # 노드 0에 연결된 노드 정보 저장(노드,거리)
+  graph[0].append((2,9))
+  
+  graph[1].append((0,4))  # 노드 1에 연결된 노드 정보 저장(노드,거리)
+  
+  graph[2].append((0,9))  # 노드 2에 연결된 노드 정보 저장(노드,거리)
+  
+  print(graph)
+  ```
+  ```
+  [[(1,4),(2,9)],[(0,4)],[(0,9)]]
+
+
+
+
+
+
+#### BFS(Breadth-First Search)
