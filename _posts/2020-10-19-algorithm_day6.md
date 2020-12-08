@@ -1,7 +1,11 @@
-
-
-
-
+---
+title: "[ALGO] Search (DFS)"
+categories: 
+  - CS
+last_modified_at: 2020-10-19 12:00:00
+comments: true
+use_math: true # MathJax On
+---
 
 #### DFS(Depth-First Search)
 - 그래프에서 깊은 부분을 우선적으로 탐색하는 알고리즘
