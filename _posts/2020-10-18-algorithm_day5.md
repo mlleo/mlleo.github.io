@@ -7,7 +7,7 @@ comments: true
 use_math: true # MathJax On
 ---
 
-Search Algorithm (BFS / DFS)
+Search Algorithm (BFS / DFS) Background
 
 #### Background
 - Stack (LIFO)
