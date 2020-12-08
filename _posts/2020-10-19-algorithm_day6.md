@@ -72,7 +72,7 @@ dfs(graph,1,visited)    # 정의된 DFS 함수 호출
 ```
 
 #### 기본 예제 1
-
+![문제1](https://user-images.githubusercontent.com/62474292/101478161-93592200-3993-11eb-8314-36a7a297cec4.JPG)
 
 
 
