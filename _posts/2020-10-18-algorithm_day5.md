@@ -11,6 +11,7 @@ Search Algorithm (BFS / DFS)
 
 #### Background
 - Stack (LIFO)
+
 `code`
 ```py
 stack = []
