@@ -2,7 +2,7 @@
 title: "[ALGO] Search (DFS)"
 categories: 
   - CS
-last_modified_at: 2020-10-19 12:00:00
+last_modified_at: 2020-10-26 12:00:00
 comments: true
 use_math: true # MathJax On
 ---
@@ -73,6 +73,11 @@ dfs(graph,1,visited)    # 정의된 DFS 함수 호출
 
 #### 기본 예제 1
 ![문제1](https://user-images.githubusercontent.com/62474292/101478161-93592200-3993-11eb-8314-36a7a297cec4.JPG)
+
+
+
+
+[출처] 이것이 취업을 위한 코딩 테스트다 with 파이썬 (나동빈 지음)
 
 
 
