@@ -1,5 +1,5 @@
 ---
-title: "[ALGO] Search (DFS/BFS)"
+title: "[ALGO] Search (DFS/BFS) Background"
 categories: 
   - CS
 last_modified_at: 2020-10-18 12:00:00
