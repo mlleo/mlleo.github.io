@@ -1,5 +1,5 @@
 ---
-title: "[ALGO] IMPLEMENTATION 2"
+title: "[ALGO] IMPLEMENTATION PROBLEM"
 categories: 
   - CS
 last_modified_at: 2020-10-20 12:00:00
