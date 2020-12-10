@@ -25,7 +25,7 @@ use_math: true # MathJax On
 ```py
 
 ```
-#### 문제 4
+#### 문제 4 (프로그래머스 코드 참고)
 
 `code`
 ```py
@@ -49,7 +49,7 @@ use_math: true # MathJax On
 ```py
 
 ```
-#### 문제 8
+#### 문제 8 (프로그래머스 코드 참고)
 
 `code`
 ```py
