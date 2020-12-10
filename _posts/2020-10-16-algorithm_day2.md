@@ -7,9 +7,8 @@ comments: true
 use_math: true # MathJax On
 ---
 
-### 그리디 알고리즘
-
 #### 문제1
+
 ![모험가길드](https://user-images.githubusercontent.com/62474292/100349922-7be17700-302c-11eb-94ff-ada05544449f.JPG)
 
 `code`
