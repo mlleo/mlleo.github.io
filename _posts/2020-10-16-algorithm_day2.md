@@ -1,5 +1,5 @@
 ---
-title: "[ALGO] GREEDY ALGORITHM 2"
+title: "[ALGO] GREEDY ALGORITHM PROBLEM"
 categories: 
   - CS
 last_modified_at: 2020-10-16 12:00:00
