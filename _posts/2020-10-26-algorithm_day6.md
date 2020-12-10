@@ -8,6 +8,7 @@ use_math: true # MathJax On
 ---
 
 #### DFS(Depth-First Search)
+
 - 그래프에서 깊은 부분을 우선적으로 탐색하는 알고리즘
 - 데이터의 개수가 N개인 경우 O(N)
 - 스택 자료구조를 이용
