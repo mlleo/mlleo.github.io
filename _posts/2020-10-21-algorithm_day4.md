@@ -21,7 +21,7 @@ use_math: true # MathJax On
 ```py
 
 ```
-#### 문제 3
+#### 문제 3 (프로그래머스 코드 참고)
 ![3_문자열압축](https://user-images.githubusercontent.com/62474292/101722474-ada71300-3aed-11eb-8a09-ee002c069440.JPG)
 ![3_2](https://user-images.githubusercontent.com/62474292/101722487-b0a20380-3aed-11eb-823a-db990eaad7a6.JPG)
 
@@ -29,7 +29,7 @@ use_math: true # MathJax On
 ```py
 
 ```
-#### 문제 4
+#### 문제 4 (프로그래머스 코드 참고)
 ![4_자물쇠와열쇠](https://user-images.githubusercontent.com/62474292/101722498-b3045d80-3aed-11eb-896c-20d8bcb7f30c.JPG)
 ![4_2](https://user-images.githubusercontent.com/62474292/101722483-b0096d00-3aed-11eb-8b21-b0013f38806a.JPG)
 
@@ -44,7 +44,7 @@ use_math: true # MathJax On
 ```py
 
 ```
-#### 문제 6
+#### 문제 6 (프로그래머스 코드 참고)
 ![6_기둥과보설치](https://user-images.githubusercontent.com/62474292/101722477-ae3fa980-3aed-11eb-8d58-d529cd640775.JPG)
 ![6_2](https://user-images.githubusercontent.com/62474292/101722490-b1d33080-3aed-11eb-9d69-ff25b88070b1.JPG)
 ![6_3](https://user-images.githubusercontent.com/62474292/101722480-af70d680-3aed-11eb-99b0-d025e2257241.JPG)
@@ -63,7 +63,7 @@ use_math: true # MathJax On
 ```py
 
 ```
-#### 문제 8
+#### 문제 8 (프로그래머스 코드 참고)
 ![8_외벽점검](https://user-images.githubusercontent.com/62474292/101722470-abdd4f80-3aed-11eb-9d44-bc33326eee98.JPG)
 ![8_2](https://user-images.githubusercontent.com/62474292/101722494-b26bc700-3aed-11eb-8a49-26dda341ac61.JPG)
 ![8_3](https://user-images.githubusercontent.com/62474292/101722484-b0096d00-3aed-11eb-9293-beac5b51ca90.JPG)
