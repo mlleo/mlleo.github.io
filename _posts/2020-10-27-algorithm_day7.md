@@ -19,6 +19,15 @@ use_math: true # MathJax On
 
 EX. BFS 예시 (방문 처리된 노드는 회색으로, 큐에서 꺼내 현재 처리하는 노드는 노란색으로 표현)
 
+![1](https://user-images.githubusercontent.com/62474292/101720538-3d968e00-3ae9-11eb-90ed-921a1e4d4aaf.png)
+![2](https://user-images.githubusercontent.com/62474292/101720541-3e2f2480-3ae9-11eb-9cbc-3dcbb0b39b53.png)
+![3](https://user-images.githubusercontent.com/62474292/101720529-3a9b9d80-3ae9-11eb-8b5b-aade65b4bf89.png)
+![4](https://user-images.githubusercontent.com/62474292/101720549-425b4200-3ae9-11eb-906f-6d92af1423e1.png)
+![5](https://user-images.githubusercontent.com/62474292/101720553-42f3d880-3ae9-11eb-9b76-0bcb88228491.png)
+![6](https://user-images.githubusercontent.com/62474292/101720547-40917e80-3ae9-11eb-8c4e-01c3dd46da93.png)
+![7](https://user-images.githubusercontent.com/62474292/101720527-396a7080-3ae9-11eb-9e69-d433e7688fd9.png)
+![8](https://user-images.githubusercontent.com/62474292/101720537-3c656100-3ae9-11eb-8963-403bdf0a539d.png)
+
 `CODE`
 ```py
 from collections import deque
@@ -56,3 +65,9 @@ bfs(graph,1,visited)    # 정의된 BFS 함수 호출
 ```
 
 #### 기본 예제 1
+![미로탈출](https://user-images.githubusercontent.com/62474292/101720543-3f605180-3ae9-11eb-8c89-6db2141fbbc9.JPG)
+
+`code`
+```py
+
+```
