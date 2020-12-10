@@ -8,6 +8,7 @@ use_math: true # MathJax On
 ---
 
 #### BFS(Breadth-First Search)
+
 - 그래프에서 가까운 노드부터 우선적으로 탐색하는 알고리즘 (너비 우선 탐색)
 - 데이터의 개수가 N개인 경우 O(N)
 - 큐 자료구조를 이용
