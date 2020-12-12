@@ -23,7 +23,7 @@ use_math: true # MathJax On
 
 ```
 
-#### 문제 3
+#### 문제 3 (프로그래머스 코드 참고)
 ![실패율](https://user-images.githubusercontent.com/62474292/101992898-b409da80-3cf9-11eb-8bff-0faea5e5f1e6.JPG)
 ![실패율2](https://user-images.githubusercontent.com/62474292/101992897-b409da80-3cf9-11eb-8459-874b37874cfa.JPG)
 ![실패율3](https://user-images.githubusercontent.com/62474292/101992896-b3714400-3cf9-11eb-9356-9270d8cdab38.JPG)
