@@ -52,7 +52,8 @@ print(array)
 - 특정한 데이터가 삽입될 위치를 정할 때(삽입될 위치를 찾기 위하여 왼쪽으로 한 칸씩 이동할 때), 삽입될 데이터보다 작은 데이터를 만나면 그 위치에서 멈추고 삽입
 
 EX. N = 10
-
+![insertion_sort](https://user-images.githubusercontent.com/62474292/102010468-941df980-3d81-11eb-82eb-78c602d1af91.png)
+![insertion_sort2](https://user-images.githubusercontent.com/62474292/102010470-954f2680-3d81-11eb-9af4-64325fdc270e.png)
 
 `code`
 ```py
