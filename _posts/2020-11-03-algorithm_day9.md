@@ -17,7 +17,8 @@ use_math: true # MathJax On
 - 가장 작은 데이터를 앞으로 보내는 과정을 N-1번 반복하면 정렬 완료
 
 EX. N = 10
-
+![Selection_sort](https://user-images.githubusercontent.com/62474292/102009119-a5aed380-3d78-11eb-9b8c-75ad45c01b69.png)
+![Selection_sort2](https://user-images.githubusercontent.com/62474292/102009123-a7789700-3d78-11eb-86dd-10203c1d84be.png)
 
 `code`
 ```py # selection sort source code
