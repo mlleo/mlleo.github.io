@@ -21,7 +21,9 @@ EX. N = 10
 ![Selection_sort2](https://user-images.githubusercontent.com/62474292/102009123-a7789700-3d78-11eb-86dd-10203c1d84be.png)
 
 `code`
-```py # selection sort source code
+```py 
+# selection sort source code
+
 array = [7,5,9,0,3,1,6,2,4,8]
 
 for i in range(len(array)):
@@ -57,6 +59,8 @@ EX. N = 10
 
 `code`
 ```py
+# Insertion sort source code
+
 array = [7,5,9,0,3,1,6,2,4,8]
 
 for i in range(1,len(array)):
