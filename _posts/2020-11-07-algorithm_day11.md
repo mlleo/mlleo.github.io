@@ -1,5 +1,5 @@
 ---
-title: "[ALGO] Sorting Problem 1"
+title: "[ALGO] Sorting PROBLEM 1"
 categories: 
   - CS
 last_modified_at: 2020-11-07 12:00:00
