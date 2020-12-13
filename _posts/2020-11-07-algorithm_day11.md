@@ -8,21 +8,22 @@ use_math: true # MathJax On
 ---
 
 #### 문제 1
-
+![위에서아래로](https://user-images.githubusercontent.com/62474292/102011073-54591100-3d85-11eb-985e-effc11f58ced.JPG)
 
 `code`
 ```py
 
 ```
 #### 문제 2
-
+![성적이낮은순서로](https://user-images.githubusercontent.com/62474292/102011071-54591100-3d85-11eb-9a90-7b0081811950.JPG)
 
 `code`
 ```py
 
 ```
 #### 문제 3
-
+![두배열의원소교체](https://user-images.githubusercontent.com/62474292/102011068-5327e400-3d85-11eb-8cc0-dd7eacc12bcc.JPG)
+![두배열의원소교체2](https://user-images.githubusercontent.com/62474292/102011075-54f1a780-3d85-11eb-914c-6ffc1e48537a.png)
 
 `code`
 ```py
