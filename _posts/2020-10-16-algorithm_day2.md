@@ -111,7 +111,7 @@ for i in range(1,m+1):
 print(result)
 ```
 
-#### 문제6
+#### 문제6 (프로그래머스 코드 참고)
 ![무지의먹방라이브](https://user-images.githubusercontent.com/62474292/102010627-992f7880-3d82-11eb-989d-b8e476180d40.JPG)
 ![무지의먹방라이브2](https://user-images.githubusercontent.com/62474292/102010624-97fe4b80-3d82-11eb-8ee2-f732501a4949.JPG)
 ![무지의먹방라이브3](https://user-images.githubusercontent.com/62474292/102010626-992f7880-3d82-11eb-9e23-8dea1baa02d1.JPG)
