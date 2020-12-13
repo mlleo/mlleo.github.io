@@ -26,6 +26,9 @@ EX. N = 10
 
 `code`
 ```py
+
+# quick sort source code
+
 array = [5,7,9,0,3,1,6,2,4,8]
 
 def quick_sort(array, start, end):
@@ -52,8 +55,37 @@ print(array)
 ```
 [0,1,2,3,4,5,6,7,8,9]
 ```
+`code`
+```py
 
+# 파이썬의 장점을 살린 quick sort source code
 
+array = [5,7,9,0,3,1,6,2,4,8]
+
+def quick_sort(array):
+  if len(array) <= 1:    # 리스트가 하나 이하의 원소만을 담고 있다면 종료
+    return array
+  
+  pivot = array[0]       # 피벗은 첫 번째 원소
+  tail = array[1:]       # 피벗을 제외한 리스트
+  
+  left_side = [x for x in tail if x <= pivot]        # 분할된 왼쪽 부분
+  right_side = [x for x in tail if x > pivot]        # 분할된 오른쪽 부분
+  
+  return quick_sort(left_side) + [pivot] + quick_sort(right_side)
+  
+print(quick_sort(array))
+```
+```
+[0,1,2,3,4,5,6,7,8,9]
+```
+
+#### Big-O of Quick sort
+- avg : O(NlogN)
+- Worst : O(N^2) : 이미 데이터가 정렬되어 있는 경우
+- Worst 과정을 피하기 위해 기본 정렬 라이브러리를 이용하여 피벗값 설정 로직 추가
+
+#### Count sort
 
 
 
