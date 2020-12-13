@@ -73,3 +73,7 @@ for i in range(1,len(array)):
 #### Big-O of Insertion Sort
 - Best : O(N), Worst : O(N^2)
 - 거의 정렬되어 있는 상황이라면 매우 강력한 정렬 알고리즘
+
+<br><br>
+
+[출처] 이것이 취업을 위한 코딩 테스트다 with 파이썬 (나동빈 지음)
