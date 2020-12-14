@@ -22,7 +22,7 @@ EX. N = 10
 
 2. 왼쪽 리스트에서 퀵 정렬 진행 (동일한 방식)
 3. 오른쪽 리스트에서 퀵 정렬 진행 (동일한 방식)
-![pivot_sort2](https://user-images.githubusercontent.com/62474292/102049814-f3811580-3e24-11eb-92a2-3471353288a7.png)
+![quick_sort2](https://user-images.githubusercontent.com/62474292/102050315-f29cb380-3e25-11eb-9d1d-0448da9660bd.png)
 
 `code`
 ```py
