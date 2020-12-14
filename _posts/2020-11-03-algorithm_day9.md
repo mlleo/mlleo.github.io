@@ -8,6 +8,7 @@ use_math: true # MathJax On
 ---
 
 #### Sorting
+
 - 데이터를 특정한 기준에 따라서 순서대로 나열하는 것
 
 #### Selection Sort
