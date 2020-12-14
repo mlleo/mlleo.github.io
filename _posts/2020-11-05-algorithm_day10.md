@@ -18,11 +18,11 @@ use_math: true # MathJax On
 EX. N = 10
 1. 분할(Divide) / 파티션(Partition)
 - 피벗의 왼쪽에는 피벗보다 작은 데이터가 위치하고, 오른쪽에는 피벗보다 큰 데이터가 위치하도록 하는 작업
-
-
+![pivot_sort](https://user-images.githubusercontent.com/62474292/102049811-f1b75200-3e24-11eb-84f7-3de7327003b9.png)
 
 2. 왼쪽 리스트에서 퀵 정렬 진행 (동일한 방식)
 3. 오른쪽 리스트에서 퀵 정렬 진행 (동일한 방식)
+![pivot_sort2](https://user-images.githubusercontent.com/62474292/102049814-f3811580-3e24-11eb-92a2-3471353288a7.png)
 
 `code`
 ```py
