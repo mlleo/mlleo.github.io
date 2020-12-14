@@ -31,6 +31,7 @@ print(stack[::-1])  # 가장 위에 있는 원소부터 출력
 ```
 - Queue (FIFO)
   - deque 객체를 리스트 자료형으로 변경하고자 하면 list(queue)!
+  
 `code`
 ```py
 from collections import deque
