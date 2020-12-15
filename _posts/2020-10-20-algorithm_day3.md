@@ -26,6 +26,9 @@ use_math: true # MathJax On
 #### 기본 예제1
 ![상하좌우](https://user-images.githubusercontent.com/62474292/100416920-feb51100-30c2-11eb-81af-461f82fb65fb.JPG)
   
+#### 예제1 풀이
+- 상,하,좌,우 움직임을 x축 방향과 y축 방향으로 나누어서 표현
+
 `code`
 ```py
 n = int(input())
@@ -51,13 +54,16 @@ print(x,y)
 #### 기본 예제2
 ![시각](https://user-images.githubusercontent.com/62474292/100416927-01b00180-30c3-11eb-8cab-294e26c4ea42.JPG)
 
+#### 예제2 풀이
+- 3중 반복문을 통해 시, 분, 초를 모두 확인하면서 전체 문자열에 '3'이 들어간 경우만 count 증가
+
 `code`
 ```py
 n = int(input())
 
 count = 0
 
-for i in range(h+1):
+for i in range(n+1):
   for j in range(60):
     for k in range(60):
       if '3' in str(i) + str(j) + str(k):
