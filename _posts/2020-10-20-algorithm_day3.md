@@ -166,7 +166,7 @@ while True:
 		if array[nx][ny] = 0:   # 뒤로 가려고 하는데 뒤가 육지인 경우
 			x = nx
 			y = ny
-		else:                   # 뒤로 가려고 하는데 뒤가 바다인 
+		else:                   # 뒤로 가려고 하는데 뒤가 바다인 경우
 			break
 		turn_time = 0
 
