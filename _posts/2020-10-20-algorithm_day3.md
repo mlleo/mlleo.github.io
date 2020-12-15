@@ -76,6 +76,10 @@ print(count)
 ![왕실의나이트](https://user-images.githubusercontent.com/62474292/100419056-15f5fd80-30c7-11eb-9514-f727c84f44e5.JPG)
 ![왕실의나이트2](https://user-images.githubusercontent.com/62474292/100419059-18f0ee00-30c7-11eb-8148-d64c732677e1.JPG)
 
+#### 예제3 풀이
+- 알파벳 문자열을 아스키 코드 값을 이용해서 자연수에 순차적으로 대응시키는 방법 주의!
+- 이동할 수 있는 모든 경우의 수를 좌표로 표현
+
 `code`
 ```py
 pos = input()
