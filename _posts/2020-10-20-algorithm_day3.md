@@ -103,9 +103,74 @@ print(count)
 #### 기본 예제4
 ![게임개발](https://user-images.githubusercontent.com/62474292/100419350-bb10d600-30c7-11eb-9081-998cf1d84ad4.JPG)
 
+#### 예제4 풀이
+- 방문한 위치 기록할 수 있는 2차원 리스트 생성
+- 방향에 대한 좌표값 생성
+- 왼쪽으로 회전하는 함수 디자인
+- 조건문을 활용하여 주어진 시나리오 시뮬레이션 시작!
+
 `code`
 ```py
+n, m = map(int, input().split())
 
+visited = [[0] * m for _ in range(n)]	# 방문한 위치 기록하기 위한 맵 생성
+
+x,y,direction = map(int, input().split())
+
+visited[n][m] = 1	# 현재 좌표 방문 기록
+
+# 전체 맵 정보 입력 받기
+
+array = []
+for i in range(n):
+	array.append(list(map(int, input().split())))
+
+# 방향 정의 (북, 동, 남, 서)
+
+dx = [-1, 0, 1, 0]
+dy = [0, 1, 0, -1]
+
+# 왼쪽으로 회전하는 함수
+
+def turn_left():
+	global direction
+	direction -= 1
+	if direction == -1:
+		direction = 3
+
+
+# 시뮬레이션 시작
+
+count = 1	
+turn_time = 0
+while True:
+	# 왼쪽으로 회전
+	turn_left()
+	nx = x + dx[direction]
+	ny = y + dy[direction]
+	if visited[nx][ny] == 0 and array[nx][ny] = 0: 	# 왼쪽으로 회전했을 때 가보지 않았으면서 + 육지인 곳 존재하는 경우
+		visited[nx][ny] = 1
+		x = nx
+		y = ny
+		count += 1
+		turn_time += 0
+		continue
+	else:     # 왼쪽 방향에 가보지 않은 칸이 없는 경우
+		turn_left()
+		turn_time += 1
+
+	if turn_time == 4:        # 모든 방향에 가보지 않은 칸이 없는 경우
+		nx = x - dx[direction]
+		ny = y - dy[direction]
+		
+		if array[nx][ny] = 0:   # 뒤로 가려고 하는데 뒤가 육지인 경우
+			x = nx
+			y = ny
+		else:                   # 뒤로 가려고 하는데 뒤가 바다인 
+			break
+		turn_time = 0
+
+print(count)
 ```
 <br><br>
 
