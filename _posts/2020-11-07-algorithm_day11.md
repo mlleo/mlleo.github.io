@@ -33,7 +33,18 @@ for i in data:
 
 `code`
 ```py
+n = int(input())
 
+data = []
+
+for _ in range(n):
+	a,b = input().split()
+	data.append((a,b))
+
+result = sorted(data, key = lambda x: int(x[1]))
+
+for i in result:
+	print(i[0], end = ' ')
 ```
 #### 문제 3
 ![두배열의원소교체](https://user-images.githubusercontent.com/62474292/102011068-5327e400-3d85-11eb-8cc0-dd7eacc12bcc.JPG)
@@ -41,7 +52,19 @@ for i in data:
 
 `code`
 ```py
+n,k = map(int, input().split())
+data_A = list(map(int, input().split()))
+data_B = list(map(int, input().split()))
 
+
+
+for _ in range(k):
+	min_A = data_A.index(min(data_A))
+	max_B = data_B.index(max(data_B))
+	data_A[min_A], data_B[max_B] = data_B[max_B], data_A[min_A]
+
+print(sum(data_A))
+	
 ```
 
 <br><br>
