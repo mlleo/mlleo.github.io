@@ -10,6 +10,10 @@ use_math: true # MathJax On
 #### 문제 1
 ![위에서아래로](https://user-images.githubusercontent.com/62474292/102011073-54591100-3d85-11eb-985e-effc11f58ced.JPG)
 
+#### 문제 1 풀이
+- 리스트 내장 함수 sort 이용
+- 파이썬 라이브러리 sorted 사용해도 됨
+
 `code`
 ```py
 n = int(input())
@@ -22,7 +26,7 @@ for _ in range(n):
 data.sort(reverse = True)
 
 for i in data:
-	print(data[i], end=' ')
+	print(i, end=' ')
 ```
 #### 문제 2
 ![성적이낮은순서로](https://user-images.githubusercontent.com/62474292/102011071-54591100-3d85-11eb-9a90-7b0081811950.JPG)
