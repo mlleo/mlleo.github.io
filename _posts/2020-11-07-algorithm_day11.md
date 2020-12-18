@@ -12,7 +12,17 @@ use_math: true # MathJax On
 
 `code`
 ```py
+n = int(input())
 
+data = []
+
+for _ in range(n):
+	data.append(int(input()))
+
+data.sort(reverse = True)
+
+for i in data:
+	print(data[i], end=' ')
 ```
 #### 문제 2
 ![성적이낮은순서로](https://user-images.githubusercontent.com/62474292/102011071-54591100-3d85-11eb-9a90-7b0081811950.JPG)
