@@ -94,14 +94,14 @@ print(min(count0,count1))
 `code`
 ```py
 n = int(input())
-coin = list(map(int, input().split()))
-coin.sort()
+coin_list = list(map(int, input().split()))
+coin_list.sort()
 
 target = 1
-for i in data:
-	if target < i:
+for coin in coin_list:
+	if target < coin:
 		break
-	target += i
+	target += coin
 
 print(target)
 ```
