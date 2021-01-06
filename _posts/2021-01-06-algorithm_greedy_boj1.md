@@ -149,3 +149,32 @@ for _ in range(j):
 
 print(result)
 ```
+
+### 17224번
+문제 링크 : [BOJ 17224](https://www.acmicpc.net/problem/17224)
+
+`code`
+```py
+n,l,k = map(int, input().split())
+
+sub1 = 0
+sub2 = 0
+score = 0
+
+for _ in range(n):
+	data = list(map(int, input().split()))
+	if data[1] <= l:	# 어려운 문제 풀 수 있음
+		sub2 += 1
+	elif data[0] <= l and data[1] > l:	# 쉬운 문제만 풀 수 있음
+		sub1 += 1
+	else:
+		continue
+
+if sub2 <= k:
+	score += 140 * sub2
+	score += 100 * min((k-sub2), sub1)
+else:
+	score += 140 * sub2
+
+print(score)
+```
