@@ -98,4 +98,79 @@ def solve(a):
     return ans
 ```
 
+### 2675번
+문제 링크 : [BOJ 2675](https://www.acmicpc.net/problem/2675)
+
+`code`
+```py
+import sys
+
+t = int(input())
+
+for _ in range(t):
+    r, s = sys.stdin.readline().split()
+    r = int(r)
+    s = list(s)
+    for data in s:
+        print(str(data) * r, end="")
+    print("")
+```
+
+### 11721번
+문제 링크 : [BOJ 11721](https://www.acmicpc.net/problem/11721)
+
+`code`
+```py
+n = list(input())
+
+count = 0
+
+for data in n:
+    print(data, end="")
+    count += 1
+
+    if count % 10 == 0:
+        print()
+
+```
+
+### 2920번
+문제 링크 : [BOJ 2920](https://www.acmicpc.net/problem/2920)
+
+`code`
+```py
+data = list(map(int, input().split()))
+
+asc = sorted(data)
+dec = sorted(data, reverse=True)
+
+if data == asc:
+	print("ascending")
+elif data == dec:
+	print("descending")
+else:
+	print("mixed")
+```
+
+### 2908번
+문제 링크 : [BOJ 2908](https://www.acmicpc.net/problem/2908)
+
+`code`
+```py
+a, b = input().split()
+
+ans_a = 0
+ans_b = 0
+
+a = list(a)
+b = list(b)
+a.reverse()
+b.reverse()
+
+for i in range(3):
+	ans_a += int(a[i]) * (10 ** (2-i))
+	ans_b += int(b[i]) * (10 ** (2-i))
+
+print(max(ans_a, ans_b))
+```
 
