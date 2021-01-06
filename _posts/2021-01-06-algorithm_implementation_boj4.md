@@ -1,5 +1,5 @@
 ---
-title: "[ALGO] IMPLEMENTATION ALGORITHM BOJ BRONZE3"
+title: "[ALGO] IMPLEMENTATION ALGORITHM BOJ BRONZE2"
 categories: 
   - CS
 last_modified_at: 2021-01-06 12:00:00
