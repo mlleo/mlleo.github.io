@@ -157,24 +157,19 @@ print(result)
 ```py
 n,l,k = map(int, input().split())
 
-sub1 = 0
-sub2 = 0
+sub1, sub2 = 0, 0
 score = 0
 
 for _ in range(n):
-	data = list(map(int, input().split()))
-	if data[1] <= l:	# 어려운 문제 풀 수 있음
+	easy, hard = map(int, input().split())
+	if hard <= l:	# 어려운 문제 풀 수 있음
 		sub2 += 1
-	elif data[0] <= l and data[1] > l:	# 쉬운 문제만 풀 수 있음
+	elif easy <= l :	# 쉬운 문제만 풀 수 있음
 		sub1 += 1
-	else:
-		continue
 
-if sub2 <= k:
-	score += 140 * sub2
-	score += 100 * min((k-sub2), sub1)
-else:
-	score += 140 * sub2
+score += 140 * min(sub2, k)
+if sub2 < k:
+	score += 100 * min(k-sub2,sub1)
 
 print(score)
 ```
