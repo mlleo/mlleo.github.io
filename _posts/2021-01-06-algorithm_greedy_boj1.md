@@ -70,3 +70,28 @@ for coin in coin_list:
 
 print(count)
 ```
+
+### 2839번
+문제 링크 : [BOJ 2839](https://www.acmicpc.net/problem/2839)
+
+`code`
+```py
+n = int(input())
+
+result = 0
+ 
+while True:
+    if (n % 5) == 0:
+        result += n // 5
+        break
+    else:
+        n -= 3
+        result += 1
+        if n == 0:
+            break
+       
+        if n < 0:
+            result = -1
+            break
+print(result)
+```
