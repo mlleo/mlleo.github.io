@@ -8,7 +8,7 @@ use_math: true # MathJax On
 ---
 
 ### 14720번
-[BOJ 14720](https://www.acmicpc.net/problem/14720)
+문제 링크 : [BOJ 14720](https://www.acmicpc.net/problem/14720)
 
 `code`
 ```py
@@ -26,7 +26,7 @@ print(count)
 ```
 
 ### 11034번
-[BOJ 11034](https://www.acmicpc.net/problem/11034)
+문제 링크 : [BOJ 11034](https://www.acmicpc.net/problem/11034)
 
 `code`
 ```py
