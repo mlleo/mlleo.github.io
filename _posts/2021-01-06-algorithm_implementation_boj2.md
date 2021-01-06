@@ -8,7 +8,7 @@ use_math: true # MathJax On
 ---
 
 ### 1008번
-문제 링크 : [BOJ 1000](https://www.acmicpc.net/problem/1008)
+문제 링크 : [BOJ 1008](https://www.acmicpc.net/problem/1008)
 
 `code`
 ```py
