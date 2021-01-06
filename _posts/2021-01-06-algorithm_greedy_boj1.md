@@ -37,3 +37,36 @@ while True:
     except:
         break
 ```
+
+### 2810번
+문제 링크 : [BOJ 2810](https://www.acmicpc.net/problem/2810)
+
+`code`
+```py
+n = int(input())
+data = input()
+
+couple = data.count('LL')
+
+if couple <= 1:
+    print(n)
+else:
+    print(n+1-couple)
+```
+
+### 5585번
+문제 링크 : [BOJ 5585](https://www.acmicpc.net/problem/5585)
+
+`code`
+```py
+n = int(input())
+change = 1000-n
+count = 0
+coin_list = [500,100,50,10,5,1]
+
+for coin in coin_list:
+	count +=  change // coin
+	change %= coin
+
+print(count)
+```
