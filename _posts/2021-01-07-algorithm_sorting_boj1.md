@@ -117,5 +117,31 @@ for data in sorted(arr):
 
 ```
 
+### 17224번
+문제 링크 : [BOJ 17224](https://www.acmicpc.net/problem/17224)
+
+`code`
+```py
+n,l,k = map(int, input().split())
+
+sub1, sub2 = 0, 0
+score = 0
+
+for _ in range(n):
+	easy, hard = map(int, input().split())
+	if hard <= l:	# 어려운 문제 풀 수 있음
+		sub2 += 1
+	elif easy <= l :	# 쉬운 문제만 풀 수 있음
+		sub1 += 1
+
+score += 140 * min(sub2, k)
+if sub2 < k:
+	score += 100 * min(k-sub2,sub1)
+
+print(score)
+
+```
+
+
 
 
