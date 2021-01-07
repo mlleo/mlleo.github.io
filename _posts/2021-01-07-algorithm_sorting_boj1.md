@@ -99,6 +99,23 @@ while True:
 		print(data, end="")
 ```
 
+### 2750번
+문제 링크 : [BOJ 2750](https://www.acmicpc.net/problem/2750)
+
+`code`
+```py
+import sys
+
+n = int(input())
+arr = []
+
+for _ in range(n):
+    arr.append(int(sys.stdin.readline().rstrip()))  # rstrip() 안하면 개행문자도 같이 저장됨
+
+for data in sorted(arr):
+    print(data)
+
+```
 
 
 
