@@ -167,6 +167,30 @@ while True:
 
 ```
 
+#### 6996번
+문제 링크 : [BOJ 6996](https://www.acmicpc.net/problem/6996)
+
+`code`
+```py
+import sys
+
+n = int(input())
+for _ in range(n):
+	a,b = sys.stdin.readline().split()
+
+	list_a = list(a)
+	list_b = list(b)
+
+	list_a.sort()
+	list_b.sort()
+
+	if list_a == list_b:
+		print(a + " & " + b + " are anagrams.")
+	else:
+		print(a + " & " + b + " are NOT anagrams.")
+
+```
+
 
 
 
