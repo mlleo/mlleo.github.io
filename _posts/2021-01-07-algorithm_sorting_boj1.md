@@ -142,6 +142,31 @@ print(score)
 
 ```
 
+### 13333번
+문제 링크 : [BOJ 13333](https://www.acmicpc.net/problem/13333)
+
+`code`
+```py
+n = int(input())
+
+data = list(map(int, input().split()))
+
+data.sort(reverse = True)
+count = 0
+target = max(data)
+
+while True:
+	for j in range(len(data)):
+		if data[j] >= target:
+			count += 1
+	if count >= target:
+		print(target)
+		break
+	target -= 1
+	count = 0
+
+```
+
 
 
 
