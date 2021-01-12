@@ -74,6 +74,26 @@ print(sum(data_A))
 	
 ```
 
+#### 모범답안
+
+`code`
+```py
+n,k = map(int, input().split())
+a = list(map(int, input().split()))
+b = list(map(int, input().split()))
+
+a.sort()
+b.sort(reverse = True)
+
+for i in range(k):
+  if a[i] < b[i]:
+    a[i] , b[i] = b[i], a[i]
+  else:
+    break
+    
+print(sum(a)
+```
+
 <br><br>
 
 [출처] 이것이 취업을 위한 코딩 테스트다 with 파이썬 (나동빈 지음)
