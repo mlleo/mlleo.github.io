@@ -83,7 +83,7 @@ print(quick_sort(array))
 ```
 
 #### Big-O of Quick sort
-- avg : O(NlogN)
+- avg : O(NlogN) : 분할이 절반씩 일어나는 경우
 - Worst : O(N^2) : 이미 데이터가 정렬되어 있는 경우
 - Worst 과정을 피하기 위해 기본 정렬 라이브러리를 이용하여 피벗값 설정 로직 추가
 
