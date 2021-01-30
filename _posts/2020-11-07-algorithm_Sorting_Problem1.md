@@ -91,7 +91,7 @@ for i in range(k):
   else:
     break
     
-print(sum(a)
+print(sum(a))
 ```
 
 <br><br>
