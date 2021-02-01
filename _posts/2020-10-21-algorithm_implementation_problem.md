@@ -99,7 +99,9 @@ print(''.join(result))
 
 `code`
 ```py
-
+def solution(s):
+    answer = 0
+    return answer
 ```
 #### 문제 4 (프로그래머스 코드 참고)
 ![4_자물쇠와열쇠](https://user-images.githubusercontent.com/62474292/101722498-b3045d80-3aed-11eb-896c-20d8bcb7f30c.JPG)
