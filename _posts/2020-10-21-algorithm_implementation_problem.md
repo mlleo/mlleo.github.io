@@ -10,9 +10,24 @@ use_math: true # MathJax On
 #### 문제 1
 ![1_럭키스트레이트](https://user-images.githubusercontent.com/62474292/101722501-b4358a80-3aed-11eb-885f-a9194df8fd07.JPG)
 
+#### 문제 1 풀이
+- 정수를 문자열로 받아서 리스트에 저장
+- 앞 절반의 합을 front에 저장, 뒤 절반의 합을 back에 저장
+
 `code`
 ```py
-
+n = list(input())
+front = 0
+back = 0
+for i in range(len(n)):
+    if i<len(n)//2:
+        front += int(n[i])
+    else:
+        back += int(n[i])
+if front == back:
+    print("LUCKY")
+else:
+    print("READY")
 ```
 #### 문제 2
 ![2_문자열재정렬](https://user-images.githubusercontent.com/62474292/101722488-b13a9a00-3aed-11eb-9830-520ef92fc303.JPG)
