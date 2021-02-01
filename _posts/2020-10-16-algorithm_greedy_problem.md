@@ -60,6 +60,11 @@ print(result)
 - 0과 1이 연속에서 나오는 덩어리를 하나의 0,1로 취급한다.
 - 예를 들어 0011000 의 경우 010으로 취급하고 이 경우 숫자가 바뀌는 구간 (count == 2)은 2번이고 이때의 최소 뒤집기 횟수는 1번이다.
 - 0101, 01010, 010101 등 규칙을 찾아보면 최소 뒤집기 횟수를 찾아낼 수 있다.
+- 010 : count = 2, result = 1
+- 0101 : count = 3, result = 2
+- 01010 : count = 4, result = 2
+- 010101 : count = 5, result = 3
+- 0101010 : count = 6, result = 3
 
 `code`
 ```py
@@ -72,6 +77,28 @@ for i in range(len(s)-1):
         count += 1
 print((count+1)//2)
 ```
+
+`code`
+```py
+# 책 모범답안
+data = input()
+count0 = 0  # 전부 0으로 바꾸는 경우
+count1 = 0  # 전부 1로 바꾸는 경우
+
+if data[0] =='1':
+  count0 += 1
+else:
+  count1 += 1
+
+for i in range(len(data)-1):
+  if data[i] != data[i+1]:
+    if data[i+1] == '1':
+      count0 += 1
+    else:
+      count1 += 1
+      
+print(min(count0,count1))
+````
 
 #### 문제4
 ![만들수없는금액](https://user-images.githubusercontent.com/62474292/100365437-d4237380-3042-11eb-81be-9f16e7cb2155.JPG)
