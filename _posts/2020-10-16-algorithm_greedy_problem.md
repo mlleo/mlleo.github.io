@@ -158,6 +158,31 @@ print(tot-set)
 
 `code`
 ```py
+# 인덱스를 활용해 빈도 구하는 과정 단순하게 한 코드
+
+n,m = map(int, input().split())
+k = list(map(int, input().split()))
+
+tot = n*(n-1)//2
+
+array = [0]*11
+
+for x in k:
+	array[x] += 1
+
+set = 0
+
+
+for i in array:
+	if i != 1:
+		sub = i * (i-1) // 2
+		set += sub
+
+print(tot-set)
+```
+
+`code`
+```py
 # 책 모범답안
 n,m = map(int, input().split())
 data = list(map(int, input().split()))
