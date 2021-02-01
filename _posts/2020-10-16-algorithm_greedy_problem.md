@@ -125,8 +125,40 @@ print(target)
 #### 문제5
 ![볼링공고르기](https://user-images.githubusercontent.com/62474292/100397105-723b2c00-308b-11eb-8cbc-f5db7156c688.JPG)
 
+#### 문제5 풀이
+- 간단하게 생각하면 '전체 경우의 수 - 같은 무게로 만들어지는 경우의 수'를 구하면 된다
+- 전체 경우의 수는 nC2
+- 무게 별 개수를 파악하기 위해 배열에 빈도수를 계산
+- 빈도수가 n이라면 같은 무게로 만들어지는 경우의 수는 nC2
+
 `code`
 ```py
+n,m = map(int, input().split())
+k = list(map(int, input().split()))
+
+k.sort()
+tot = n*(n-1)//2        # 전체 경우의 수
+arr = []                # 각각의 무게가 몇개씩 있는지 빈도수를 담을 배열
+count = 0               # 빈도수
+set = 0                 # 같은 무게로 만들어지는 경우의 수
+
+for i in range(len(k)-1):
+	count += 1
+	if k[i] != k[i+1]:      # 무게가 달라지면 이전 무게의 총 빈도수를 배열에 저장
+		arr.append(count)
+		count = 0
+arr.append(count+1)       # 마지막 무게의 총 빈도수를 배열에 저장
+for i in arr:
+	if i != 1:
+		sub = i * (i-1) // 2
+		set += sub
+
+print(tot-set)
+```
+
+`code`
+```py
+# 책 모범답안
 n,m = map(int, input().split())
 data = list(map(int, input().split()))
 
