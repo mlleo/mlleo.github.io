@@ -29,12 +29,69 @@ if front == back:
 else:
     print("READY")
 ```
-#### 문제 2
-![2_문자열재정렬](https://user-images.githubusercontent.com/62474292/101722488-b13a9a00-3aed-11eb-9830-520ef92fc303.JPG)
 
 `code`
 ```py
+# 모범답안
+n = input()
+length = len(n)
 
+for i in range(length//2):
+  summary += int(n[i])
+
+for i in range(length//2, length):
+  summary -= int(n[i])
+
+if summary == 0:
+  print("LUCKY")
+else:
+  print("READY")
+```
+#### 문제 2
+![2_문자열재정렬](https://user-images.githubusercontent.com/62474292/101722488-b13a9a00-3aed-11eb-9830-520ef92fc303.JPG)
+
+#### 문제 2 풀이
+- 문자열을 리스트에 저장후 sort()을 통해 정렬 (오름차순 정렬 시 숫자가 알파벳보다 앞에 정렬됨)
+- 숫자이면 sum에 더해주면서 합을 저장, 알파벳이면 새로운 배열에 저장
+- 숫자들의 합 sum을 마지막에 새로운 배열에 저장
+
+`code`
+```py
+n = list(input())
+n.sort()
+sum = 0
+arr=[]
+
+for data in n:
+    if data.isdigit():
+        sum += int(data)
+    else:
+        arr.append(data)
+arr.append(sum)
+
+for data in arr:
+    print(data, end="")
+```
+
+`code`
+```py
+# 모범답안
+data = input()
+result = []
+value = 0
+
+for x in data:
+  if x.isalpha():
+    result.append(x)
+  else:
+    value += int(x)
+
+result.sort()
+
+if value != 0:
+  result.append(str(value))
+
+print(''.join(result))
 ```
 #### 문제 3 (프로그래머스 코드 참고)
 ![3_문자열압축](https://user-images.githubusercontent.com/62474292/101722474-ada71300-3aed-11eb-8a09-ee002c069440.JPG)
