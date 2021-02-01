@@ -84,7 +84,7 @@ print(count)
 `code`
 ```py
 pos = input()
-column = int(pos[0])-int(ord('a'))+1
+column = int(ord(pos[0]))-int(ord('a'))+1
 row = int(pos[1])
 
 steps = [(-2,-1),(-2,1),(-1,-2),(-1,2),(2,-1),(2,1),(1,-2),(1,2)]
