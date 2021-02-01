@@ -121,6 +121,27 @@ while True:
 result += (n-1)
 print(result)
 ```
+
+`code`
+
+```py
+# 직관적인 풀이
+n, k - map(int, int, input().split())
+result = 0
+
+while n >= k:
+  while n % k != 0:
+    n -= 1
+    result += 1
+  n // = k
+  result += 1
+
+while n > 1:
+  n -= 1
+  result += 1
+  
+print(result)
+```
 <br><br>
 
 [출처] 이것이 취업을 위한 코딩 테스트다 with 파이썬 (나동빈 지음)
