@@ -113,7 +113,7 @@ n = int(input())
 coin_list = list(map(int, input().split()))
 coin_list.sort()
 
-target = 1
+target = 1      # 만들 수 없는 최소 금액
 for coin in coin_list:
 	if target < coin:
 		break
