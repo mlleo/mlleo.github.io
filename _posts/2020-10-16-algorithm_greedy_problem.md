@@ -22,7 +22,6 @@ stat = list(map(int, input().split()))
 stat.sort()
 
 group = 0
-
 count = 0
 
 for i in stat:
