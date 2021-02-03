@@ -13,7 +13,7 @@ use_math: true # MathJax On
 ![1](https://user-images.githubusercontent.com/62474292/106705610-a3a71980-6631-11eb-8548-57b1b81ebc6d.JPG)
 
 `code`
-```mysql
+```sql
 SELECT * 
 FROM ANIMAL_INS 
 ORDER BY ANIMAL_ID
