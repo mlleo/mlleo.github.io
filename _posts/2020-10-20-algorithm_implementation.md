@@ -118,7 +118,7 @@ visited = [[0] * m for _ in range(n)]	# 방문한 위치 기록하기 위한 맵
 
 x,y,direction = map(int, input().split())
 
-visited[n][m] = 1	# 현재 좌표 방문 기록
+visited[x][y] = 1	# 현재 좌표 방문 기록
 
 # 전체 맵 정보 입력 받기
 
@@ -157,7 +157,6 @@ while True:
 		turn_time = 0
 		continue
 	else:     # 왼쪽 방향에 가보지 않은 칸이 없는 경우
-		turn_left()
 		turn_time += 1
 
 	if turn_time == 4:        # 모든 방향에 가보지 않은 칸이 없는 경우
