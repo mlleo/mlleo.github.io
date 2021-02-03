@@ -13,7 +13,7 @@ use_math: true # MathJax On
 ![1](https://user-images.githubusercontent.com/62474292/106707741-14036a00-6635-11eb-9da3-341da5361e66.JPG)
 
 `code`
-```mysql
+```sql
 SELECT ANIMAL_ID
 FROM ANIMAL_INS
 WHERE NAME IS NULL
@@ -24,7 +24,7 @@ ORDER BY ANIMAL_ID
 ![2](https://user-images.githubusercontent.com/62474292/106707745-149c0080-6635-11eb-89dd-3772408e1655.JPG)
 
 `code`
-```mysql
+```sql
 SELECT ANIMAL_ID
 FROM ANIMAL_INS
 WHERE NAME IS NOT NULL
@@ -35,7 +35,7 @@ ORDER BY ANIMAL_ID
 ![3](https://user-images.githubusercontent.com/62474292/106707746-15349700-6635-11eb-89a6-0f6a1d91edb6.JPG)
 
 `code`
-```mysql
+```sql
 SELECT ANIMAL_TYPE, IFNULL(NAME, "No name") AS NAME, SEX_UPON_INTAKE
 FROM ANIMAL_INS
 ORDER BY ANIMAL_ID
