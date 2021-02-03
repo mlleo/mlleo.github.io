@@ -154,7 +154,7 @@ while True:
 		x = nx
 		y = ny
 		count += 1
-		turn_time += 0
+		turn_time = 0
 		continue
 	else:     # 왼쪽 방향에 가보지 않은 칸이 없는 경우
 		turn_left()
