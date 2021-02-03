@@ -11,6 +11,8 @@ use_math: true # MathJax On
 
 #### 예제 1
 ![1](https://user-images.githubusercontent.com/62474292/106705610-a3a71980-6631-11eb-8548-57b1b81ebc6d.JPG)
+#### TIP
+- 내가 지정한 우선순위로 정렬하고 싶은 경우 : ORDER BY FIELD(COLUMN_NAME, 데이터1, 데이터2, 데이터3)
 
 `code`
 ```sql
