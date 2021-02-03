@@ -42,13 +42,13 @@ ORDER BY ANIMAL_ID
 #### 예제 4
 ![4](https://user-images.githubusercontent.com/62474292/106705618-a570dd00-6631-11eb-8005-484674b33421.JPG)
 #### TIP
-- NOT 연산은 항상 조건식 앞에 작성한다!
+- '값이 같다'라는 연산을 쓰고 싶을 때는 =, '값이 다르다'는 연산을 쓰고 싶을 때는 != 활용!
 
 `code`
 ```sql
 SELECT ANIMAL_ID, NAME 
 FROM ANIMAL_INS 
-WHERE NOT INTAKE_CONDITION ='Aged' 
+WHERE INTAKE_CONDITION !='Aged' 
 ORDER BY ANIMAL_ID
 ```
 #### 예제 5
@@ -73,6 +73,7 @@ ORDER BY NAME, DATETIME DESC
 ![7](https://user-images.githubusercontent.com/62474292/106705623-a6097380-6631-11eb-8f55-29e1601f2297.JPG)
 #### TIP
 - 행의 갯수를 제한하고 싶을 때는 LIMIT 사용
+- LIMIT 2,3 : 2번째 index (즉, 3번째 행)부터 3개의 행을 출력
 
 `code`
 ```sql
