@@ -24,8 +24,6 @@ ORDER BY ANIMAL_ID
 
 #### 예제 2
 ![2](https://user-images.githubusercontent.com/62474292/106707745-149c0080-6635-11eb-89dd-3772408e1655.JPG)
-#### TIP
-- 일반적으로 NOT 연산은 조건식 가장 앞에 작성하지만 IS NULL 비교연산에 사용되는 경우 IS NOT NULL로 사용가능!
 
 `code`
 ```sql
