@@ -1,5 +1,5 @@
 ---
-title: "[SQL] SELECT"
+title: "[SQL] SUM,MAX,MIN"
 categories: 
   - CS
 last_modified_at: 2021-02-03 12:00:00
