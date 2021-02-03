@@ -13,7 +13,7 @@ use_math: true # MathJax On
 ![1](https://user-images.githubusercontent.com/62474292/106706190-a48c7b00-6632-11eb-90e5-692449d76233.JPG)
 
 `code`
-```mysql
+```sql
 SELECT DATETIME
 FROM ANIMAL_INS
 ORDER BY DATETIME DESC
@@ -24,7 +24,7 @@ LIMIT 1;
 ![2](https://user-images.githubusercontent.com/62474292/106706193-a5251180-6632-11eb-9c32-8f4356b164fc.JPG)
 
 `code`
-```mysql
+```sql
 SELECT DATETIME
 FROM ANIMAL_INS
 ORDER BY DATETIME
@@ -35,7 +35,7 @@ LIMIT 1;
 ![3](https://user-images.githubusercontent.com/62474292/106706195-a5bda800-6632-11eb-8539-b8421ef9acb7.JPG)
 
 `code`
-```mysql
+```sql
 SELECT COUNT(*)
 FROM ANIMAL_INS
 ```
@@ -44,7 +44,7 @@ FROM ANIMAL_INS
 ![4](https://user-images.githubusercontent.com/62474292/106706196-a5bda800-6632-11eb-8bd7-c46fa9cbad88.JPG)
 
 `code`
-```mysql
+```sql
 SELECT COUNT(DISTINCT NAME) AS count
 FROM ANIMAL_INS;
 ```
