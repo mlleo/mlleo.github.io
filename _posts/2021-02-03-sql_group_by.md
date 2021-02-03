@@ -11,6 +11,9 @@ use_math: true # MathJax On
 
 #### 예제 1
 ![1](https://user-images.githubusercontent.com/62474292/106706584-3ac0a100-6633-11eb-908e-d3b07b2bfc06.JPG)
+#### TIP
+- 행의 개수를 알고 싶으면 COUNT(COLUMN_NAME) 사용!
+- 
 
 `code`
 ```sql
