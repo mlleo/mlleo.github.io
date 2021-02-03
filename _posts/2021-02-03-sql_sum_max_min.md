@@ -58,6 +58,9 @@ FROM ANIMAL_INS
 #### 예제 4
 ![4](https://user-images.githubusercontent.com/62474292/106706196-a5bda800-6632-11eb-8bd7-c46fa9cbad88.JPG)
 
+#### TIP
+- DISTINCT COLUMN_NAME : COLUMN_NAME 열에서 중복을 배제하고 고유값만을 출력하고자 할 때 사용
+
 `code`
 ```sql
 SELECT COUNT(DISTINCT NAME) AS count
