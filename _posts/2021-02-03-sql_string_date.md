@@ -12,6 +12,12 @@ use_math: true # MathJax On
 #### 예제 1
 ![1](https://user-images.githubusercontent.com/62474292/106708525-5da08480-6636-11eb-9c78-c82cf0fdbbd4.JPG)
 
+#### TIP
+- IN : WHERE 절 내에서 여러 값을 설정하고자 할 때 사용
+  - WHERE COLUMN_NAME IN (Value1, Value2, Value3)
+- BETWEEN : WHERE 절 내에서 검색 조건으로 범위를 지정하고자 할 때 사용 (이상, 이하 개념)
+  - WHERE COLUMN_NAME BETWEEN Value1 AND Value2
+
 `code`
 ```sql
 SELECT ANIMAL_ID, NAME, SEX_UPON_INTAKE
@@ -22,6 +28,14 @@ ORDER BY ANIMAL_ID
 
 #### 예제 2
 ![2](https://user-images.githubusercontent.com/62474292/106708528-5ed1b180-6636-11eb-815c-429f01a13365.JPG)
+
+#### TIP
+- LIKE : WHERE 절과 함게 특정 패턴을 검색할 때 사용
+  - % : 0개 문자, 혹은 여러 개의 문자를 의미
+  - _ : 하나의 문자를 의미
+  - LIKE 'a%' : a로 시작되는 모든 문자열
+  - LIKE 'a__%' : a로 시작되고 최소 3이상의 길이를 가진 문자열
+  - LIKE '_ r%' : 두 번째 자리에 r이 들어가는 모든 문자열
 
 `code`
 ```sql
