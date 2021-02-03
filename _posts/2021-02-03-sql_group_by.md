@@ -13,7 +13,7 @@ use_math: true # MathJax On
 ![1](https://user-images.githubusercontent.com/62474292/106706584-3ac0a100-6633-11eb-908e-d3b07b2bfc06.JPG)
 
 `code`
-```mysql
+```sql
 SELECT ANIMAL_TYPE, COUNT(ANIMAL_TYPE) AS count
 FROM ANIMAL_INS
 GROUP BY ANIMAL_TYPE
@@ -24,7 +24,7 @@ ORDER BY ANIMAL_TYPE;
 ![2](https://user-images.githubusercontent.com/62474292/106706586-3bf1ce00-6633-11eb-9e9b-bdc36f7d74f8.JPG)
 
 `code`
-```mysql
+```sql
 SELECT NAME, COUNT
 FROM (
     SELECT NAME, COUNT(NAME) AS COUNT
@@ -39,7 +39,7 @@ ORDER BY NAME;
 ![3](https://user-images.githubusercontent.com/62474292/106706588-3c8a6480-6633-11eb-8513-9f65614a2a40.JPG)
 
 `code`
-```mysql
+```sql
 SELECT HOUR(DATETIME) AS HOUR, COUNT(DATETIME) AS COUNT
 FROM ANIMAL_OUTS
 WHERE HOUR(DATETIME) >= 9 AND HOUR(DATETIME) <= 19
@@ -51,6 +51,6 @@ ORDER BY HOUR
 ![4](https://user-images.githubusercontent.com/62474292/106706590-3c8a6480-6633-11eb-88fe-74b81515f3ca.JPG)
 
 `code`
-```mysql
+```sql
 
 ```
