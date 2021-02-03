@@ -19,6 +19,13 @@ FROM ANIMAL_INS
 ORDER BY DATETIME DESC
 LIMIT 1;
 ```
+#### TIP
+- MAX(COLUMN_NAME) : COLUMN_NAME에서 최대값 가져오기 (숫자, 문자 모두 가능)
+
+`code`
+```sql
+SELECT MAX(DATETIME) FROM ANIMAL_INS
+```
 
 #### 예제 2
 ![2](https://user-images.githubusercontent.com/62474292/106706193-a5251180-6632-11eb-9c32-8f4356b164fc.JPG)
@@ -29,6 +36,14 @@ SELECT DATETIME
 FROM ANIMAL_INS
 ORDER BY DATETIME
 LIMIT 1;
+```
+
+#### TIP
+- MIN(COLUMN_NAME) : COLUMN_NAME에서 최소값 가져오기 (숫자, 문자 모두 가능)
+
+`code`
+```sql
+SELECT MIN(DATETIME) FROM ANIMAL_INS
 ```
 
 #### 예제 3
