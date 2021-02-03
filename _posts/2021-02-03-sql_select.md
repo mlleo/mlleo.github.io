@@ -41,6 +41,8 @@ ORDER BY ANIMAL_ID
 ```
 #### 예제 4
 ![4](https://user-images.githubusercontent.com/62474292/106705618-a570dd00-6631-11eb-8005-484674b33421.JPG)
+#### TIP
+- NOT 연산은 항상 조건식 앞에 작성한다!
 
 `code`
 ```sql
@@ -69,6 +71,8 @@ ORDER BY NAME, DATETIME DESC
 ```
 #### 예제 7
 ![7](https://user-images.githubusercontent.com/62474292/106705623-a6097380-6631-11eb-8f55-29e1601f2297.JPG)
+#### TIP
+- 행의 갯수를 제한하고 싶을 때는 LIMIT 사용
 
 `code`
 ```sql
