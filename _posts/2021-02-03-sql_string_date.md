@@ -13,7 +13,7 @@ use_math: true # MathJax On
 ![1](https://user-images.githubusercontent.com/62474292/106708525-5da08480-6636-11eb-9c78-c82cf0fdbbd4.JPG)
 
 `code`
-```mysql
+```sql
 SELECT ANIMAL_ID, NAME, SEX_UPON_INTAKE
 FROM ANIMAL_INS
 WHERE NAME in ('Lucy','Ella','Pickle','Rogan','Sabrina', 'Mitty')
@@ -24,7 +24,7 @@ ORDER BY ANIMAL_ID
 ![2](https://user-images.githubusercontent.com/62474292/106708528-5ed1b180-6636-11eb-815c-429f01a13365.JPG)
 
 `code`
-```mysql
+```sql
 SELECT ANIMAL_ID, NAME
 FROM ANIMAL_INS
 WHERE NAME LIKE '%EL%' AND ANIMAL_TYPE = 'Dog'
@@ -35,7 +35,7 @@ ORDER BY NAME
 ![3](https://user-images.githubusercontent.com/62474292/106708530-5ed1b180-6636-11eb-9d5c-3eeb31f81c5c.JPG)
 
 `code`
-```mysql
+```sql
 SELECT ANIMAL_ID, NAME, CASE
 WHEN SEX_UPON_INTAKE LIKE '%Neutered%'OR SEX_UPON_INTAKE LIKE '%Spayed%' THEN 'O' 
 ELSE 'X' 
@@ -49,7 +49,7 @@ ORDER BY ANIMAL_ID
 ![4-2](https://user-images.githubusercontent.com/62474292/106708533-5f6a4800-6636-11eb-9df8-095f44629c86.JPG)
 
 `code`
-```mysql
+```sql
 
 ```
 
@@ -57,7 +57,7 @@ ORDER BY ANIMAL_ID
 ![5](https://user-images.githubusercontent.com/62474292/106708534-6002de80-6636-11eb-8a7d-e60cfb3ac8b9.JPG)
 
 `code`
-```mysql
+```sql
 SELECT ANIMAL_ID, NAME, DATE_FORMAT(DATETIME, "%Y-%m-%d") AS 날짜
 FROM ANIMAL_INS
 ORDER BY ANIMAL_ID
