@@ -11,6 +11,8 @@ use_math: true # MathJax On
 
 #### 예제 1
 ![1](https://user-images.githubusercontent.com/62474292/106707741-14036a00-6635-11eb-9da3-341da5361e66.JPG)
+#### TIP
+- 값이 NULL인 데이터를 조회하려면 조건식에 (COLUMN_NAME IS NULL)을 사용! COLUMN_NAME = NULL 아님!
 
 `code`
 ```sql
@@ -22,6 +24,8 @@ ORDER BY ANIMAL_ID
 
 #### 예제 2
 ![2](https://user-images.githubusercontent.com/62474292/106707745-149c0080-6635-11eb-89dd-3772408e1655.JPG)
+#### TIP
+- 일반적으로 NOT 연산은 조건식 가장 앞에 작성하지만 IS NULL 비교연산에 사용되는 경우 IS NOT NULL로 사용가능!
 
 `code`
 ```sql
@@ -33,6 +37,8 @@ ORDER BY ANIMAL_ID
 
 #### 예제 3
 ![3](https://user-images.githubusercontent.com/62474292/106707746-15349700-6635-11eb-89a6-0f6a1d91edb6.JPG)
+#### TIP
+- 값이 NULL인 데이터를 다른 데이터로 채워주고 싶은 경우 IFNULL(COLUMN_NAME, VALUE)를 통해 변경!
 
 `code`
 ```sql
