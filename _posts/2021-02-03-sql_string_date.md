@@ -62,9 +62,16 @@ ORDER BY ANIMAL_ID
 ![4-1](https://user-images.githubusercontent.com/62474292/106708531-5f6a4800-6636-11eb-95d3-9842cadbf3f0.JPG)
 ![4-2](https://user-images.githubusercontent.com/62474292/106708533-5f6a4800-6636-11eb-9df8-095f44629c86.JPG)
 
+#### TIP
+- DATE타입끼리는 기본적인 사칙연산 가능!
+
 `code`
 ```sql
-
+SELECT INS.ANIMAL_ID, INS.NAME
+FROM ANIMAL_INS AS INS INNER JOIN ANIMAL_OUTS AS OUTS
+ON INS.ANIMAL_ID = OUTS.ANIMAL_ID
+ORDER BY OUTS.DATETIME-INS.DATETIME DESC
+LIMIT 2
 ```
 
 #### 예제 5
