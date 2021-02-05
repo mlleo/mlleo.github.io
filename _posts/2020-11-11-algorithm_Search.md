@@ -113,7 +113,27 @@ input_data = sys.stdin.readline().rstrip()  # 엔터(줄 바꿈 기호)를 제�
 ![1](https://user-images.githubusercontent.com/62474292/104382310-37c11c00-5571-11eb-978a-9c8357c03b99.JPG)
 `code`
 ```py
+n = int(input())
+data = list(map(int, input().split()))
+m = int(input())
+request = list(map(int, input().split()))
 
+def binary_search(data, target, start, end):
+    while start <= end:
+        mid = (start + end) // 2
+        if data[mid] == target:
+            print("yes")
+            return
+        elif data[mid] > target:
+            end = mid-1
+        else:
+            start = mid+1
+    print("no")
+
+
+
+for i in range(m):
+    binary_search(data, request[i],0,n-1)
 ```
 
 #### 기본 예제2
