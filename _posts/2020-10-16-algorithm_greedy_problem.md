@@ -206,11 +206,30 @@ print(result)
 ![무지의먹방라이브2](https://user-images.githubusercontent.com/62474292/102010624-97fe4b80-3d82-11eb-8ee2-f732501a4949.JPG)
 ![무지의먹방라이브3](https://user-images.githubusercontent.com/62474292/102010626-992f7880-3d82-11eb-9e23-8dea1baa02d1.JPG)
 
+#### 문제 6 풀이
+- 정확성 테스트는 통과하였으나 아직 효율성 테스트 통과 못함....!
+
 `code`
 ```py
+from collections import deque
+
 def solution(food_times, k):
-    answer = 0
+    if sum(food_times) <= k:
+        return -1
+    queue = deque()
+    for i in range(len(food_times)):
+        queue.append((i+1, food_times[i]))
+
+    for _ in range(k):
+        num, time = queue.popleft()
+        if time > 1:
+            time -= 1
+            queue.append((num,time))
+    num, time = queue.popleft()
+    answer = num
     return answer
+
+print(solution([3,1,2],5))
 ```
 <br><br>
 
