@@ -74,6 +74,25 @@ def binary_search(array, target, start, end):
     return None
 ```
 
+#### 파이썬 이진 탐색 라이브러리
+- bisect_left(a,x) : 정렬된 순서를 유지하면서 배열 a에 x를 삽입할 인덱스 (여러 곳이 존재하면 가장 왼쪽 위치)를 반환
+- bisect_right(a,x) : 정렬된 순서를 유지하면서 배열 a에 x를 삽입할 인덱스 (여러 곳이 존재하면 가장 오른쪽 위치)를 반환
+
+`code`
+```py
+from bisect import bisect_left, bisect_right
+
+a = [1,2,4,4,8]
+x = 4
+
+print(bisect_left(a,x))
+print(bisect_right(a,x))
+```
+```
+2
+4
+```
+
 #### Tree (Data Structure)
 ![tree](https://user-images.githubusercontent.com/62474292/104382301-35f75880-5571-11eb-91cf-4016eb19fcf3.png)
 
