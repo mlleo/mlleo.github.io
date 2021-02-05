@@ -53,7 +53,34 @@ bfs(v)
 
 `code`
 ```py
+from collections import deque
 
+n = int(input())        # 컴퓨터의 수
+pair = int(input())     # 연결된 쌍의 수
+
+graph = [[0] * (n+1) for _ in range(n+1)]
+visited = [0] * (n+1)
+
+for _ in range(pair):
+    x,y = map(int, input().split())
+    graph[x][y] = 1
+    graph[y][x] = 1
+
+def bfs(v):
+    result = -1
+    queue = deque()
+    queue.append(v)
+    visited[v] = 1
+    while queue:
+        v = queue.popleft()
+        result += 1
+        for i in range(1, n+1):
+            if visited[i] == 0 and graph[v][i] == 1:
+                queue.append(i)
+                visited[i] = 1
+    print(result)
+
+bfs(1)
 ```
 
 #### 2667번
