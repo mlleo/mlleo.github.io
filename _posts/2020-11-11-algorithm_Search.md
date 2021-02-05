@@ -115,6 +115,7 @@ input_data = sys.stdin.readline().rstrip()  # 엔터(줄 바꿈 기호)를 제�
 ```py
 n = int(input())
 data = list(map(int, input().split()))
+data.sort()
 m = int(input())
 request = list(map(int, input().split()))
 
