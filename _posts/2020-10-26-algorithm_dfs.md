@@ -77,7 +77,37 @@ dfs(graph,1,visited)    # 정의된 DFS 함수 호출
 
 `code`
 ```py
+n, m = map(int, input().split())
 
+graph = []
+
+# 2차원 리스트의 맵 정보 입력
+for i in range(n):
+  graph.append(list(map(int,input())))
+
+
+# DFS로 특정한 노드 방문한 뒤에 연결된 모든 노드 방문
+def dfs(x,y):
+  if x < 0 or x > n or y < o or y > n:
+    return False;
+  if graph[x][y] == 0:
+    graph[x][y] = 1
+    dfs(x-1,y)
+    dfs(x+1,y)
+    dfs(x,y-1)
+    dfs(x,y+1)
+    return True
+  return False
+
+result = 0
+
+# 모든 위치에 대해서 DFS 진행
+for i in range(n):
+  for j in range(m):
+    if dfs(i,j) == True:
+      result += 1
+
+print(result)
 ```
 
 <br><br>
