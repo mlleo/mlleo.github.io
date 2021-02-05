@@ -88,7 +88,7 @@ for i in range(n):
 
 # DFS로 특정한 노드 방문한 뒤에 연결된 모든 노드 방문
 def dfs(x,y):
-  if x < 0 or x > n or y < o or y > n:
+  if x < 0 or x >= n or y < o or y >= m:
     return False;
   if graph[x][y] == 0:
     graph[x][y] = 1
