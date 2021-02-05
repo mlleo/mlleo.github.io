@@ -114,7 +114,7 @@ input_data = sys.stdin.readline().rstrip()  # 엔터(줄 바꿈 기호)를 제�
 `code`
 ```py
 
-``
+```
 
 #### 기본 예제2
 ![2](https://user-images.githubusercontent.com/62474292/104382308-37c11c00-5571-11eb-84a2-f6224d1ebbba.JPG)
@@ -122,4 +122,4 @@ input_data = sys.stdin.readline().rstrip()  # 엔터(줄 바꿈 기호)를 제�
 `code`
 ```py
 
-``
+```
