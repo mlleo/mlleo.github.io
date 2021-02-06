@@ -10,6 +10,7 @@ use_math: true # MathJax On
 #### 모든 문제의 출처는 Baekjoon Online Judge (https://www.acmicpc.net/) 입니다
 
 #### 1260번
+![BOJ_1260](https://user-images.githubusercontent.com/62474292/107109512-8322cd80-6884-11eb-9d16-a33144f47213.JPG)
 
 `code`
 ```py
@@ -50,6 +51,7 @@ bfs(v)
 ```
 
 #### 2606번
+![BOJ_2606](https://user-images.githubusercontent.com/62474292/107109513-83bb6400-6884-11eb-8760-8576288beb4c.JPG)
 
 `code`
 ```py
@@ -84,6 +86,8 @@ bfs(1)
 ```
 
 #### 2667번
+
+![BOJ_2667](https://user-images.githubusercontent.com/62474292/107109514-8453fa80-6884-11eb-9c7e-6470f2468e02.JPG)
 
 `code`
 ```py
@@ -129,6 +133,8 @@ for data in cnt:
 ```
 
 #### 1012번
+
+![BOJ_1012](https://user-images.githubusercontent.com/62474292/107109515-84ec9100-6884-11eb-8c09-2b188c76b792.JPG)
 
 `code`
 ```py
@@ -177,6 +183,8 @@ for _ in range(t):
 
 #### 2178번
 
+![BOJ_2178](https://user-images.githubusercontent.com/62474292/107109516-84ec9100-6884-11eb-82dc-d85707e0c6fa.JPG)
+
 `code`
 ```py
 from collections import deque
@@ -211,6 +219,7 @@ print(bfs(0,0))
 ```
 
 #### 1697번
+![boj_1697](https://user-images.githubusercontent.com/62474292/107109551-bf562e00-6884-11eb-9166-08166acbd77c.JPG)
 
 `code`
 ```py
