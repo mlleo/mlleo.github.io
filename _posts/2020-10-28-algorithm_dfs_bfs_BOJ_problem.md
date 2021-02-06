@@ -214,5 +214,31 @@ print(bfs(0,0))
 
 `code`
 ```py
+from collections import deque
 
+def bfs(v):
+    count = 0
+    queue = deque()
+    queue.append((v,count))
+    while queue:
+        data = queue.popleft()
+        v = data[0]
+        count = data[1]
+        if not visited[v]:
+            visited[v] = 1
+            if v == k:
+                return count
+            count += 1
+            if (v * 2) <= 100000:
+                queue.append((v * 2, count))
+            if (v + 1) <= 100000:
+                queue.append((v + 1, count))
+            if (v - 1) >= 0:
+                queue.append((v - 1, count))
+    return count
+
+
+n, k = map(int, input().split())
+visited = [0] * 100001
+print(bfs(n))
 ```
