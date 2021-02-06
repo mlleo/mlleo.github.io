@@ -253,6 +253,7 @@ print(bfs(n))
 ```
 
 #### 7562번
+![boj_7562](https://user-images.githubusercontent.com/62474292/107117543-47a4f500-68be-11eb-9cf8-9d9b64f3d319.JPG)
 
 `code`
 ```py
