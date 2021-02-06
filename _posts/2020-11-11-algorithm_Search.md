@@ -224,6 +224,9 @@ for i in x:
 #### 기본 예제2
 ![2](https://user-images.githubusercontent.com/62474292/104382308-37c11c00-5571-11eb-84a2-f6224d1ebbba.JPG)
 
+#### 예제2 풀이
+- 원하는 조건을 만족하는 가장 알맞은 값을 찾는 문제에 주로 'parametric search'가 사용되는데 이 때 최적화 문제라면 이진 탐색으로 결정 문제를 해결하면서 범위를 좁혀갈 수 있다
+
 `code`
 ```py
 n,m = map(int, input().split())         # n : 떡의 개수 m : 요청한 길이
