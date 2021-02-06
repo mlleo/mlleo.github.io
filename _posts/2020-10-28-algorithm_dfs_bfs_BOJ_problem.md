@@ -132,7 +132,47 @@ for data in cnt:
 
 `code`
 ```py
+from collections import deque
 
+t = int(input())    # 테스트 케이스 개수
+for _ in range(t):
+    m,n,k = map(int, input().split())
+
+    graph = [[0] * (m) for _ in range(n)]
+    for _ in range(k):
+        x,y = map(int, input().split())
+        graph[y][x] = 1
+    visited = [[0] * (m) for _ in range(n)]
+
+    dy = [-1,1,0,0]
+    dx = [0,0,-1,1]
+
+    def bfs(y,x):
+        if graph[y][x] == 0 or visited[y][x] == 1:                  # 배추가 없거나 이미 방문한 배추인 경우
+            return False
+        queue = deque()
+        queue.append((y,x))
+        while queue:
+            y,x = queue.popleft()
+            for i in range(4):
+                nx = x + dx[i]
+                ny = y + dy[i]
+                if nx < 0 or nx >= m or ny < 0 or ny >= n:
+                    continue
+                if graph[ny][nx] == 0:
+                    continue
+                if graph[ny][nx] == 1 and visited[ny][nx] == 0:
+                    queue.append((ny,nx))
+                    visited[ny][nx] = 1
+        return True
+
+
+    count = 0
+    for i in range(n):
+        for j in range(m):
+            if bfs(i,j) == True:
+                count += 1
+    print(count)
 ```
 
 #### 2178번
