@@ -251,3 +251,46 @@ n, k = map(int, input().split())
 visited = [0] * 100001
 print(bfs(n))
 ```
+
+#### 7562번
+
+`code`
+```py
+from collections import deque
+
+def bfs(cur_x,cur_y,pos_x,pos_y):
+
+    queue = deque()
+    queue.append((cur_x,cur_y))
+    visited[cur_x][cur_y] = 1
+    while queue:
+        x, y = queue.popleft()
+        if x == pos_x and y == pos_y:
+            print(graph[x][y])
+            return 1
+        for i in range(8):
+            nx = x + dx[i]
+            ny = y + dy[i]
+            if nx < 0 or nx >= l or ny < 0 or ny >= l:
+                continue
+            if visited[nx][ny] == 0:
+                queue.append((nx,ny))
+                visited[nx][ny] = 1
+                graph[nx][ny] = graph[x][y] + 1
+    return 0
+
+t = int(input())                                    # 테스트 케이스 개수
+
+for test in range(t):
+    l = int(input())                                # 체스판의 한 변의 길이
+    cur_x, cur_y = map(int ,input().split())        # 현재 나이트 위치
+    pos_x, pos_y = map(int, input().split())        # 이동하려는 나이트 위치
+
+    dx = [-2,-2,-1,-1,1,1,2,2]
+    dy = [-1,1,-2,2,-2,2,-1,1]
+
+    visited = [[0] * l for _ in range(l)]
+    graph = [[0] * l for _ in range(l)]
+
+    bfs(cur_x,cur_y,pos_x,pos_y)
+```
