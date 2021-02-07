@@ -7,6 +7,8 @@ comments: true
 use_math: true # MathJax On
 ---
 
+#### (DFS/BFS) BOJ PROBLEM
+
 #### 모든 문제의 출처는 Baekjoon Online Judge (https://www.acmicpc.net/) 입니다
 
 #### 1260번
