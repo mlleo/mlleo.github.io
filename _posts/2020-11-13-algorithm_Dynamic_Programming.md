@@ -8,6 +8,7 @@ use_math: true # MathJax On
 ---
 
 #### Dynamic Programming
+
 - 한 번 계산한 결과값은 별도의 메모리에 저장하여 다시 계산하지 않도록 하는 알고리즘
 - 다이나믹 프로그래밍은 다음의 조건을 만족할 때 사용가능
   - Optimal Substructure
