@@ -139,7 +139,20 @@ print(d[n])
 
 `code`
 ```py
+x = int(input())
 
+# 앞서 계산된 결과를 저장하기 위한 DP 테이블 초기화
+d= [0] * 30001
+
+for i in range(2, x+1):
+    d[i] = d[i-1] + 1
+    if i % 2 == 0 and d[i] > d[i//2] + 1:
+        d[i] = d[i // 2] + 1
+    if i % 3 == 0 and d[i] > d[i//3] + 1:
+        d[i] = d[i // 3] + 1
+    if i % 5 == 0 and d[i] > d[i // 5] + 1:
+        d[i] = d[i // 5] + 1
+print(d[x])
 ```
 
 #### 기본 예제 2
@@ -147,7 +160,18 @@ print(d[n])
 
 `code`
 ```py
+n = int(input())
 
+# 앞서 계산된 결과를 저장하기 위한 DP 테이블 초기화
+d= [0] * 100
+
+food = list(map(int, input().split()))
+d[0] = food[0]
+d[1] = max(food[0],food[1])
+for i in range(2, n):
+    d[i] = max(d[i-1], d[i-2] + food[i])
+
+print(d[n-1])
 ```
 
 #### 기본 예제 3
@@ -155,7 +179,17 @@ print(d[n])
 
 `code`
 ```py
+n = int(input())
 
+# 앞서 계산된 결과를 저장하기 위한 DP 테이블 초기화
+d= [0] * 1001
+
+d[1] = 1
+d[2] = 3
+for i in range(3, n+1):
+    d[i] = d[i-1] + 2 *  d[i-2]
+
+print(d[n])
 ```
 
 #### 기본 예제 4
