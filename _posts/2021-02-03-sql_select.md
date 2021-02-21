@@ -64,7 +64,8 @@ ORDER BY ANIMAL_ID
 ```
 #### 예제 6
 ![6](https://user-images.githubusercontent.com/62474292/106705621-a6097380-6631-11eb-998c-11673e7d96b9.JPG)
-
+#### TIP
+- 정렬 기준이 여러개일 경우 순서대로 적을 것! 앞에 오는 기준이 정렬 1순위!
 `code`
 ```sql
 SELECT ANIMAL_ID, NAME, DATETIME 
