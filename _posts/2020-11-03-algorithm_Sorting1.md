@@ -79,6 +79,20 @@ for i in range(1,len(array)):
 - Best : O(N), Worst : O(N^2)
 - 거의 정렬되어 있는 상황이라면 매우 강력한 정렬 알고리즘
 
+#### Bubble Sort
+- sdfas
+
+![bublle](https://user-images.githubusercontent.com/62474292/109023990-9a750e00-7700-11eb-99ab-6ab387eccf6a.JPG)
+
+`code`
+```py
+def BubbleSort(a):  # a: 정렬할 리스트
+  for i in range(len(a)-1, 0, -1):
+    for j in range(0,i):
+      if a[j] > a[j+1]:
+        a[j], a[j+1] = a[j+1], a[j]
+```
+
 <br><br>
 
 [출처] 이것이 취업을 위한 코딩 테스트다 with 파이썬 (나동빈 지음)
