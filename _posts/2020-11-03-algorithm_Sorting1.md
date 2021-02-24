@@ -80,7 +80,8 @@ for i in range(1,len(array)):
 - 거의 정렬되어 있는 상황이라면 매우 강력한 정렬 알고리즘
 
 #### Bubble Sort
-- sdfas
+-  서로 인접한 두 원소를 검사하여 정렬하는 알고리즘
+-  인접한 두 원소를 비교하여 크기가 순서대로 되어 있지 않은 경우 교환
 
 ![bublle](https://user-images.githubusercontent.com/62474292/109023990-9a750e00-7700-11eb-99ab-6ab387eccf6a.JPG)
 
@@ -92,6 +93,9 @@ def BubbleSort(a):  # a: 정렬할 리스트
       if a[j] > a[j+1]:
         a[j], a[j+1] = a[j+1], a[j]
 ```
+
+#### Big-O of Bubble Sort
+- O(N^2)
 
 <br><br>
 
