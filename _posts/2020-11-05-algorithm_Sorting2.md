@@ -119,6 +119,33 @@ for i in range(len(count)):
 0 0 1 1 2 2 3 4 5 5 6 7 8 9 9
 ```
 
+`code`
+```py
+# Count sort source code (실제 동작 원리)
+
+def countsort(a,b):             # a: 입력 배열, b: 정렬이후 저장할 배열
+    max_num = max(a)
+    c = [0] * (max_num+1)
+
+    for i in range(len(a)):
+        c[a[i]] += 1
+
+    for i in range(1,len(c)):
+        c[i] += c[i-1]
+
+    for i in range(len(b)-1, -1, -1):          # 마지막 인덱스부터 0까지 확인
+        b[c[a[i]]-1] = a[i]
+        c[a[i]] -= 1
+
+    return b
+
+a = [2,5,7,89,9,3,4]
+b = [0] * 7
+
+print(countsort(a,b))
+
+```
+
 #### Big-O of Count sort
 
 - 현존하는 정렬 알고리즘 중에 Radix sort와 더불어 가장 빠름
