@@ -65,9 +65,27 @@ print(result)
 ![실패율2](https://user-images.githubusercontent.com/62474292/101992897-b409da80-3cf9-11eb-8459-874b37874cfa.JPG)
 ![실패율3](https://user-images.githubusercontent.com/62474292/101992896-b3714400-3cf9-11eb-9356-9270d8cdab38.JPG)
 
+#### 문제3 풀이
+- stage에 도달했지만 클리어하지 못한 사용자를 먼저 구하자!
+- 이후에는 문제에서 제시된 수식으로 정리
+
 `code`
 ```py
+def solution(N, stages):  # N: 스테이지 개수, stages : 사용자가 멈춰있는 스테이지 배열
+    answer = []
+    user = len(stages)
 
+    for i in range(1, N + 1):  # 각 스테이지마다 실패율 계산
+        count = stages.count(i)         # 도달, but 클리어 못한 수
+        if count == 0:
+            failure = 0
+        else:
+            failure = count / user
+        answer.append((i,failure))
+        user -= count                    # stage에 도달하지 못한 user 제외
+    answer = sorted(answer, key = lambda x : -x[1])
+    answer = [i[0] for i in answer]
+    return answer
 ```
 
 #### 문제 4
