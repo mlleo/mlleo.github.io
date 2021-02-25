@@ -31,23 +31,24 @@ use_math: true # MathJax On
 
 `code`
 ```py
-n = int(input())
-data = input().split()
+n = int(input())                    # 공간 크기
+data = input().split()              # 이동 계획
+
+moves = ['L','R','U','D']
+dy = [-1,1,0,0]
+dx = [0,0,-1,1]
+
 x,y = 1,1
 
-dx = [0,0,-1,1]
-dy = [1,-1,0,0]
-move = ['L','R','U','D']
-
-for x in data:
-	for j in range(len(move)):
-		if x == move[j]:
-			nx = x + dx[j]
-			ny = y + dy[j]
-	if nx <1 or ny <1 or nx > n or ny > n:
-		continue
-	x,y = nx, ny
-
+for i in data:
+    for j in range(len(moves)):
+        if i == moves[j]:
+            nx = x + dx[j]
+            ny = y + dy[j]
+            break
+    if nx >= 1 and nx <= n and ny >= 1 and ny <= n:
+        x = nx
+        y = ny
 print(x,y)
 ```
 
