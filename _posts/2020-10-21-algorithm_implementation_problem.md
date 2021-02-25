@@ -125,7 +125,71 @@ def solution(s):
 
 `code`
 ```py
+n = int(input())                        # 보드의 크기
+k = int(input())                        # 사과 개수
 
+graph = [[0] * n for _ in range(n)]
+head_x,head_y = 0,0
+tail_x,tail_y = 0,0
+graph[head_x][head_y] = 1
+for _ in range(k):
+    x,y = map(int, input().split())
+    graph[x-1][y-1] = 10                # 사과 위치 표시
+l = int(input())                        # 방향 변환 횟수
+
+direction_change = []                   # 방향 변환 정보
+for _ in range(l):
+    direction_change.append(input().split())              # X 초 뒤에 'L'이면 왼쪽으로 90도회전, 'D'이면 오른쪽으로 90도 회전
+change_time = [int(i[0]) for i in direction_change]      # 방향 바꾸는 시간 (오름차순)
+change_direction = [i[1] for i in direction_change] # 방향 바꾸는 정보 (시계/반시계)
+
+dx = [0,1,0,-1]         # 동, 남, 서, 북
+dy = [1,0,-1,0]
+direction = 0           # 처음 방향은 동쪽
+time = 0                # 몇 초 뒤에 끝나는지
+time_index = 0
+snake = [(head_x,head_y)]
+
+def turn_left():
+    global direction
+    direction -= 1
+    if direction == -1:
+        direction = 3
+
+def turn_right():
+    global direction
+    direction += 1
+    if direction == 4:
+        direction = 0
+
+
+while True:
+    if time in change_time:     # 방향 바꿀 시간이면
+        if change_direction[time_index] == 'L':         # 왼쪽 90도 회전
+            turn_left()
+        else:                                           # 오른쪽 90도 회전
+            turn_right()
+        time_index += 1
+    nx = head_x + dx[direction]
+    ny = head_y + dy[direction]
+    if nx < 0 or nx >= n or ny < 0 or ny >= n or graph[nx][ny] == 1:
+        time += 1
+        break
+    elif graph[nx][ny] != 10:         # 사과가 없으면
+        graph[tail_x][tail_y] = 0
+        del snake[0]
+
+
+    head_x = nx
+    head_y = ny
+    snake.append((head_x,head_y))
+    tail_x = snake[0][0]
+    tail_y = snake[0][1]
+    graph[nx][ny] = 1
+    time += 1
+    # print(head_x,head_y)
+
+print(time)
 ```
 #### 문제 6 (프로그래머스 코드 참고)
 ![6_기둥과보설치](https://user-images.githubusercontent.com/62474292/101722477-ae3fa980-3aed-11eb-8d58-d529cd640775.JPG)
