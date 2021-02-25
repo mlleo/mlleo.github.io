@@ -1,5 +1,5 @@
 ---
-title: "[ALGO] Sorting 2 (Quick Sort / Count Sort)"
+title: "[ALGO] Sorting 2 (Quick Sort / Count Sort / Merge Sort)"
 categories: 
   - CS
 last_modified_at: 2020-11-05 12:00:00
@@ -189,6 +189,42 @@ print(result)
 [('바나나',2), ('당근',3), ('사과',5)]
 ```
 
+#### Merge Sort
+- 1개씩 요소를 다 divide 한 이후 둘씩 크기를 비교하면서 정렬하고 merge하는 
+
+`code`
+```py
+def merge_sort(list):
+    if len(list) <= 1:                                 # 요소가 1개이면 분리 끝
+        return list
+    mid = len(list) // 2                               # 중심 기준
+    leftList = list[:mid]                              # 왼쪽 리스트
+    rightList = list[mid:]                             # 오른쪽 리스트
+    leftList = merge_sort(leftList)                    # 왼쪽도 다시 재귀호출로 분리
+    rightList = merge_sort(rightList)                  # 오른쪽도 다시 재귀호출로 분리
+    return merge(leftList, rightList)
+
+def merge(left, right):
+    result = []
+    while len(left) > 0 or len(right) > 0:              # left와 right의 요소가 하나도 없을 때까지 반복
+        if len(left) > 0 and len(right) > 0:            # 둘 다 요소가 최소 1개 있는 경우
+            if left[0] <= right[0]:                     # 첫 번째 원소끼리 비교
+                result.append(left[0])
+                left = left[1:]
+            else:
+                result.append(right[0])
+                right = right[1:]
+        elif len(left) > 0:
+            result.append(left[0])
+            left = left[1:]
+        elif len(right) > 0:
+            result.append(right[0])
+            right = right[1:]
+    return result
+```
+
+#### Big-O of Merge sort
+- O(nlogn)
 
 
 
