@@ -190,7 +190,9 @@ print(result)
 ```
 
 #### Merge Sort
-- 1개씩 요소를 다 divide 한 이후 둘씩 크기를 비교하면서 정렬하고 merge하는 
+- 1개씩 요소를 다 divide 한 이후 둘씩 크기를 비교하면서 정렬하고 merge하는 방법
+
+![merge](https://user-images.githubusercontent.com/62474292/109114553-2890d900-7781-11eb-92e0-70ae9315259b.JPG)
 
 `code`
 ```py
