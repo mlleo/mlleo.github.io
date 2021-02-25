@@ -30,9 +30,34 @@ for i in range(n):
 #### 문제 2
 ![안테나](https://user-images.githubusercontent.com/62474292/101992900-b53b0780-3cf9-11eb-8362-04a1c1c9f15d.JPG)
 
+#### 문제 2 풀이
+- 완전탐색으로도 해결할 수 있지만 시간초과
+- 타겟이 될 만한 집을 골라야 하는데 이 때 집의 위치를 전부 정렬시켰을 때 중앙에 있는 집이 타겟으로 적합!
+- 집 개수가 홀수, 짝수일때 모두를 고려하기 위해 안정성 있게 타겟을 2개 설정(짝수일 때는 중앙이라고 할 수 있는 타겟이 2개!)
+- 완전탐색 O(N^2)에서 시간복잡도가 O(N)으로 줄어듬!
+
 `code`
 ```py
+import sys
 
+n = int(input())            # 집 개수
+pos = list(map(int, input().split()))       # 집 위치
+pos.sort()
+mid = len(pos)//2
+target_list = [pos[mid-1], pos[mid]]
+
+min_value = sys.maxsize
+result = 0
+
+for target in target_list:
+    sum = 0
+    for j in range(len(pos)):
+        sum += abs(target-pos[j])
+    if min_value > sum:
+        result = target
+        min_value = sum
+
+print(result)
 ```
 
 #### 문제 3 (프로그래머스 코드 참고)
