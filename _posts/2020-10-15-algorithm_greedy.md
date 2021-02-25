@@ -126,21 +126,21 @@ print(result)
 
 ```py
 # 직관적인 풀이
-n, k - map(int, int, input().split())
-result = 0
+n, k = map(int, input().split())        # n : 입력 자연수, k: 나누는 수
 
-while n >= k:
-  while n % k != 0:
-    n -= 1
-    result += 1
-  n // = k
-  result += 1
+count = 0
+while True:
+    if n < k:
+        break
+    if n % k != 0:
+        count += (n % k)
+        n -= (n % k)
+    else:
+        count += 1
+        n //= k
 
-while n > 1:
-  n -= 1
-  result += 1
-  
-print(result)
+count += (n-1)
+print(count)
 ```
 <br><br>
 
