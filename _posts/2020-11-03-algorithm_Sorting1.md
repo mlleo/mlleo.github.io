@@ -1,5 +1,5 @@
 ---
-title: "[ALGO] Sorting 1 (Selection Sort / Insertion Sort)"
+title: "[ALGO] Sorting 1 (Selection Sort / Insertion Sort / Bubble Sort)"
 categories: 
   - CS
 last_modified_at: 2020-11-03 12:00:00
