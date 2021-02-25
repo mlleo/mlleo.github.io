@@ -150,7 +150,7 @@ while True:
 	turn_left()
 	nx = x + dx[direction]
 	ny = y + dy[direction]
-	if visited[nx][ny] == 0 and array[nx][ny] = 0: 	# 왼쪽으로 회전했을 때 가보지 않았으면서 + 육지인 곳 존재하는 경우
+	if visited[nx][ny] == 0 and array[nx][ny] == 0: 	# 왼쪽으로 회전했을 때 가보지 않았으면서 + 육지인 곳 존재하는 경우
 		visited[nx][ny] = 1
 		x = nx
 		y = ny
@@ -164,7 +164,7 @@ while True:
 		nx = x - dx[direction]
 		ny = y - dy[direction]
 		
-		if array[nx][ny] = 0:   # 뒤로 가려고 하는데 뒤가 육지인 경우
+		if array[nx][ny] == 0:   # 뒤로 가려고 하는데 뒤가 육지인 경우
 			x = nx
 			y = ny
 		else:                   # 뒤로 가려고 하는데 뒤가 바다인 경우
