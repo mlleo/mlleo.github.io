@@ -2,6 +2,8 @@
 title: "[ALGO] (DFS/BFS) BOJ PROBLEM"
 categories: 
   - CS
+tags:
+  - ALGORITHM
 last_modified_at: 2020-10-28 12:00:00
 comments: true
 use_math: true # MathJax On
