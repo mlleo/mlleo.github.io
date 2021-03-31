@@ -2,6 +2,8 @@
 title: "[SQL] STRING, DATE"
 categories: 
   - CS
+tags:
+  - SQL
 last_modified_at: 2021-02-03 12:00:00
 comments: true
 use_math: true # MathJax On
