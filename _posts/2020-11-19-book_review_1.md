@@ -2,6 +2,8 @@
 title: "[Book Review]모든 순간이 너였다"
 categories: 
   - Daily
+tags:
+  - BOOK
 last_modified_at: 2020-11-19 12:00:00
 comments: true
 use_math: true # MathJax On
