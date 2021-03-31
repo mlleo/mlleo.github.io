@@ -2,6 +2,8 @@
 title: "[ALGO] Search (DFS / BFS) PROBLEM"
 categories: 
   - CS
+tags:
+  - ALGORITHM
 last_modified_at: 2020-11-01 12:00:00
 comments: true
 use_math: true # MathJax On
