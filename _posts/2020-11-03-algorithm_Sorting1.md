@@ -2,6 +2,8 @@
 title: "[ALGO] Sorting 1 (Selection Sort / Insertion Sort / Bubble Sort)"
 categories: 
   - CS
+tags:
+  - ALGORITHM
 last_modified_at: 2020-11-03 12:00:00
 comments: true
 use_math: true # MathJax On
