@@ -82,7 +82,7 @@ WHERE conditions;
 ```
 
 #### SELECT
-- 테이블 내에서 원하는 컬럼 데이터 검색
+- 테이블 내에서 원하는 컬럼 데이터 검색 (자세한 건 SQL 포스팅 참고!)
 
 ```mysql
 # 모든 사원의 모든 정보 검색
@@ -98,8 +98,4 @@ SELECT employee_id, first_name, salary,
        end "연봉등급"
 from employees;
 ```
-
-```mysql
-# 모든 회원의 모든 정보 검색
-SELECT * FROM table_name;
-```
+#### JDBC
