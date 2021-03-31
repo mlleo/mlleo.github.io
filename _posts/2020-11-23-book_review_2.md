@@ -2,6 +2,8 @@
 title: "[Book Review]하마터면 열심히 살뻔했다"
 categories: 
   - Daily
+tags:
+  - BOOK
 last_modified_at: 2020-11-23 12:00:00
 comments: true
 use_math: true # MathJax On
