@@ -67,3 +67,39 @@ Transport Layer 1
   - deliver_data() : called by rdt to deliver data to upper
   - rdt_rcv(): called when packet arrives on rcv_side of channel
   
+#### rdt3.0 : channels with errors and loss
+- Assumptions
+  - Underlying channel may flip bits in packet
+  - Use checksum to detect bit errors
+  - Underlying channel can also lose packets(data, ACKs)
+  - checksum, sequence number, ACKs, retransmissions will be of help... but not enough
+  - checksum also have error (but low probability than error in data)
+![checksum](https://user-images.githubusercontent.com/62474292/114246004-87767e80-99cc-11eb-9881-f272166fd8d8.png)
+
+- How to recover from errors
+  - Retransmission
+  - Feedback from receiver (ACK -> success, NAK -> corrupt)
+  - Retransmisstion timer
+
+
+#### Scenario
+
+![sender1](https://user-images.githubusercontent.com/62474292/114246011-89404200-99cc-11eb-92bf-98fc33e24815.png)
+![receiver1](https://user-images.githubusercontent.com/62474292/114246015-8c3b3280-99cc-11eb-8d26-73548d91b0d5.png)
+
+- no loss
+
+![1](https://user-images.githubusercontent.com/62474292/114246185-f5bb4100-99cc-11eb-85fc-60fec2813e64.png)
+- packet loss
+
+![2](https://user-images.githubusercontent.com/62474292/114246186-f6ec6e00-99cc-11eb-83a7-19262507925d.png)
+- ACK loss
+
+![3](https://user-images.githubusercontent.com/62474292/114246187-f7850480-99cc-11eb-9779-0dbb68cd4dd0.png)
+- timeout / delayed ACK
+
+![4](https://user-images.githubusercontent.com/62474292/114246189-f81d9b00-99cc-11eb-84d0-b65e60824ab7.png)
+
+#### stop and wait operation
+![11](https://user-images.githubusercontent.com/62474292/114246312-4468db00-99cd-11eb-9dd5-0fc79941a5f4.png)
+
