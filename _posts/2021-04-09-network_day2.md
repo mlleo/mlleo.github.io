@@ -43,3 +43,6 @@ Transport Layer 2
 ![1](https://user-images.githubusercontent.com/62474292/114248893-f1465680-99d3-11eb-876f-a87aedbfba75.png)
 ![2](https://user-images.githubusercontent.com/62474292/114248897-f3101a00-99d3-11eb-9d48-ed8c9cd6f568.png) 
  
+#### Selective repeat
+![1](https://user-images.githubusercontent.com/62474292/114250223-f6a5a000-99d7-11eb-8ec9-376bfa353309.JPG)
+![2](https://user-images.githubusercontent.com/62474292/114250224-f7d6cd00-99d7-11eb-971e-4a069144e89e.JPG)
