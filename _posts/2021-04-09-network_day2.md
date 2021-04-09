@@ -46,3 +46,13 @@ Transport Layer 2
 #### Selective repeat
 ![1](https://user-images.githubusercontent.com/62474292/114250223-f6a5a000-99d7-11eb-8ec9-376bfa353309.JPG)
 ![2](https://user-images.githubusercontent.com/62474292/114250224-f7d6cd00-99d7-11eb-971e-4a069144e89e.JPG)
+
+Scenario
+- No problem
+![1](https://user-images.githubusercontent.com/62474292/114250708-8ac43700-99d9-11eb-85b9-7585364be517.png)
+
+- Problem (Sequence number size < sender's window size + receiver's window size)
+![2](https://user-images.githubusercontent.com/62474292/114250712-8bf56400-99d9-11eb-8a34-783a4381aee5.png)
+
+- Solution (Sequence number size >= sender's window size + receiver's window size)
+![3](https://user-images.githubusercontent.com/62474292/114250714-8bf56400-99d9-11eb-8a07-9455265ce82b.png)
